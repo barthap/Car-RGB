@@ -1,0 +1,2286 @@
+
+CarRGB.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000c4c  00000000  00000000  000000b4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         0000000e  00802000  00000c4c  00000d00  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000019  0080200e  0080200e  00000d0e  2**0
+                  ALLOC
+  3 .eeprom       00000006  00810000  00810000  00000d0e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .comment      00000030  00000000  00000000  00000d14  2**0
+                  CONTENTS, READONLY
+  5 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000d44  2**2
+                  CONTENTS, READONLY
+  6 .debug_aranges 000000a8  00000000  00000000  00000d84  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   00002dab  00000000  00000000  00000e2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000068b  00000000  00000000  00003bd7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   0000071d  00000000  00000000  00004262  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  0000018c  00000000  00000000  00004980  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    00019e47  00000000  00000000  00004b0c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000a68  00000000  00000000  0001e953  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 000000d8  00000000  00000000  0001f3bb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_macro  00007973  00000000  00000000  0001f493  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 57 00 	jmp	0xae	; 0xae <__ctors_end>
+   4:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+   8:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+   c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  10:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  14:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  18:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  1c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  20:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  24:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  28:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  2c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  30:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  34:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  38:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  3c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  40:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  44:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  48:	0c 94 5f 02 	jmp	0x4be	; 0x4be <__vector_18>
+  4c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  50:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  54:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  58:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  5c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  60:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  64:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  68:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  6c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  70:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  74:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  78:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  7c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  80:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  84:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  88:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  8c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  90:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  94:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  98:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  9c:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  a0:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  a4:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+  a8:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__bad_interrupt>
+
+000000ac <__ctors_start>:
+  ac:	e6 05       	cpc	r30, r6
+
+000000ae <__ctors_end>:
+  ae:	11 24       	eor	r1, r1
+  b0:	1f be       	out	0x3f, r1	; 63
+  b2:	cf ef       	ldi	r28, 0xFF	; 255
+  b4:	cd bf       	out	0x3d, r28	; 61
+  b6:	df e2       	ldi	r29, 0x2F	; 47
+  b8:	de bf       	out	0x3e, r29	; 62
+
+000000ba <__do_copy_data>:
+  ba:	10 e2       	ldi	r17, 0x20	; 32
+  bc:	a0 e0       	ldi	r26, 0x00	; 0
+  be:	b0 e2       	ldi	r27, 0x20	; 32
+  c0:	ec e4       	ldi	r30, 0x4C	; 76
+  c2:	fc e0       	ldi	r31, 0x0C	; 12
+  c4:	02 c0       	rjmp	.+4      	; 0xca <__do_copy_data+0x10>
+  c6:	05 90       	lpm	r0, Z+
+  c8:	0d 92       	st	X+, r0
+  ca:	ae 30       	cpi	r26, 0x0E	; 14
+  cc:	b1 07       	cpc	r27, r17
+  ce:	d9 f7       	brne	.-10     	; 0xc6 <__do_copy_data+0xc>
+
+000000d0 <__do_clear_bss>:
+  d0:	20 e2       	ldi	r18, 0x20	; 32
+  d2:	ae e0       	ldi	r26, 0x0E	; 14
+  d4:	b0 e2       	ldi	r27, 0x20	; 32
+  d6:	01 c0       	rjmp	.+2      	; 0xda <.do_clear_bss_start>
+
+000000d8 <.do_clear_bss_loop>:
+  d8:	1d 92       	st	X+, r1
+
+000000da <.do_clear_bss_start>:
+  da:	a7 32       	cpi	r26, 0x27	; 39
+  dc:	b2 07       	cpc	r27, r18
+  de:	e1 f7       	brne	.-8      	; 0xd8 <.do_clear_bss_loop>
+
+000000e0 <__do_global_ctors>:
+  e0:	10 e0       	ldi	r17, 0x00	; 0
+  e2:	c7 e5       	ldi	r28, 0x57	; 87
+  e4:	d0 e0       	ldi	r29, 0x00	; 0
+  e6:	04 c0       	rjmp	.+8      	; 0xf0 <__do_global_ctors+0x10>
+  e8:	21 97       	sbiw	r28, 0x01	; 1
+  ea:	fe 01       	movw	r30, r28
+  ec:	0e 94 fd 05 	call	0xbfa	; 0xbfa <__tablejump2__>
+  f0:	c6 35       	cpi	r28, 0x56	; 86
+  f2:	d1 07       	cpc	r29, r17
+  f4:	c9 f7       	brne	.-14     	; 0xe8 <__do_global_ctors+0x8>
+  f6:	0e 94 c7 02 	call	0x58e	; 0x58e <main>
+  fa:	0c 94 24 06 	jmp	0xc48	; 0xc48 <_exit>
+
+000000fe <__bad_interrupt>:
+  fe:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000102 <GetKeybSample>:
+// trwaæ jak najkrócej
+// ***********************************************************************
+unsigned int
+GetKeybSample( void )
+{
+	return (( ~PORTD.IN ) & ( KEY ));
+ 102:	80 91 68 06 	lds	r24, 0x0668
+ 106:	90 e0       	ldi	r25, 0x00	; 0
+ 108:	80 95       	com	r24
+ 10a:	90 95       	com	r25
+}
+ 10c:	84 70       	andi	r24, 0x04	; 4
+ 10e:	99 27       	eor	r25, r25
+ 110:	08 95       	ret
+
+00000112 <KeysTime>:
+// Funkcja zwraca czas wciskania aktualnej kombinacji klawiszy
+// ***********************************************************************
+unsigned int
+KeysTime( void )
+{
+	return keytime;
+ 112:	80 91 14 20 	lds	r24, 0x2014
+ 116:	90 91 15 20 	lds	r25, 0x2015
+}
+ 11a:	08 95       	ret
+
+0000011c <IsKeyPressed>:
+// Funkcja zwraca stan klawiszy zgodnie z podana mask¹ jako argument funkcji
+// ***********************************************************************
+unsigned int
+IsKeyPressed( unsigned int mask )
+{
+	return keys & mask;
+ 11c:	20 91 18 20 	lds	r18, 0x2018
+ 120:	30 91 19 20 	lds	r19, 0x2019
+}
+ 124:	82 23       	and	r24, r18
+ 126:	93 23       	and	r25, r19
+ 128:	08 95       	ret
+
+0000012a <ClrKeyb>:
+// ClrKeyb() musi byæ wykonana atomowo.
+// ***********************************************************************
+
+void
+ClrKeyb( int lock )
+{
+ 12a:	cf 93       	push	r28
+ 12c:	df 93       	push	r29
+ 12e:	ec 01       	movw	r28, r24
+	prevKeybSt = GetKeybSample();
+ 130:	0e 94 81 00 	call	0x102	; 0x102 <GetKeybSample>
+ 134:	80 93 12 20 	sts	0x2012, r24
+ 138:	90 93 13 20 	sts	0x2013, r25
+	keys = 0;
+ 13c:	10 92 18 20 	sts	0x2018, r1
+ 140:	10 92 19 20 	sts	0x2019, r1
+	keytime = 0;
+ 144:	10 92 14 20 	sts	0x2014, r1
+ 148:	10 92 15 20 	sts	0x2015, r1
+	keycnt = 0;
+ 14c:	10 92 16 20 	sts	0x2016, r1
+ 150:	10 92 17 20 	sts	0x2017, r1
+	arIndex = 0;
+ 154:	10 92 0f 20 	sts	0x200F, r1
+	arTime = _art[0];
+ 158:	e0 91 02 20 	lds	r30, 0x2002
+ 15c:	f0 91 03 20 	lds	r31, 0x2003
+ 160:	80 81       	ld	r24, Z
+ 162:	91 81       	ldd	r25, Z+1	; 0x01
+ 164:	80 93 10 20 	sts	0x2010, r24
+ 168:	90 93 11 20 	sts	0x2011, r25
+	if( lock ) keyblock = 1;
+ 16c:	cd 2b       	or	r28, r29
+ 16e:	19 f0       	breq	.+6      	; 0x176 <ClrKeyb+0x4c>
+ 170:	81 e0       	ldi	r24, 0x01	; 1
+ 172:	80 93 0e 20 	sts	0x200E, r24
+}
+ 176:	df 91       	pop	r29
+ 178:	cf 91       	pop	r28
+ 17a:	08 95       	ret
+
+0000017c <KeybProc>:
+KeybProc( void )
+{
+	unsigned int realKeybSt;
+	
+	// Pobranie stanu klawiszy
+	realKeybSt = GetKeybSample();
+ 17c:	0e 94 81 00 	call	0x102	; 0x102 <GetKeybSample>
+	
+	// Sprawdzenie czy stan sie zmieni³
+	if( prevKeybSt != realKeybSt )
+ 180:	20 91 12 20 	lds	r18, 0x2012
+ 184:	30 91 13 20 	lds	r19, 0x2013
+ 188:	28 17       	cp	r18, r24
+ 18a:	39 07       	cpc	r19, r25
+ 18c:	29 f0       	breq	.+10     	; 0x198 <KeybProc+0x1c>
+	{
+		// Stan sie zmieni³ wiêc resetowanie klawiatury i wyjœcie z funkcji
+		ClrKeyb( KBD_NOLOCK );
+ 18e:	80 e0       	ldi	r24, 0x00	; 0
+ 190:	90 e0       	ldi	r25, 0x00	; 0
+ 192:	0e 94 95 00 	call	0x12a	; 0x12a <ClrKeyb>
+		return;
+ 196:	08 95       	ret
+	}
+	
+	// Sprawdzenie czy brak naciœniêtych klawiszy lub klawiatura zablokowana
+	if( !realKeybSt || keyblock )
+ 198:	21 15       	cp	r18, r1
+ 19a:	31 05       	cpc	r19, r1
+ 19c:	29 f0       	breq	.+10     	; 0x1a8 <KeybProc+0x2c>
+ 19e:	80 91 0e 20 	lds	r24, 0x200E
+ 1a2:	81 11       	cpse	r24, r1
+ 1a4:	5c c0       	rjmp	.+184    	; 0x25e <KeybProc+0xe2>
+ 1a6:	03 c0       	rjmp	.+6      	; 0x1ae <KeybProc+0x32>
+	{
+		// Ponowne sprawdzenie czy brak nacisniêtych klawiszy
+		// Jeœli tak to odblokowanie klawiatury
+		if( !realKeybSt ) keyblock = 0;
+ 1a8:	10 92 0e 20 	sts	0x200E, r1
+ 1ac:	08 95       	ret
+		return;
+	}
+	// Zwiekszenie licznika czasu klawiatury
+	keytime++;
+ 1ae:	80 91 14 20 	lds	r24, 0x2014
+ 1b2:	90 91 15 20 	lds	r25, 0x2015
+ 1b6:	01 96       	adiw	r24, 0x01	; 1
+ 1b8:	80 93 14 20 	sts	0x2014, r24
+ 1bc:	90 93 15 20 	sts	0x2015, r25
+	// Zachowanie stanu klawiszy
+	keys = realKeybSt;
+ 1c0:	20 93 18 20 	sts	0x2018, r18
+ 1c4:	30 93 19 20 	sts	0x2019, r19
+	
+	// Obs³uga autorepetycji
+	// Sprawdzenie czy licznik czsu klawiatury osi¹gn¹³ czas nastêpnej
+	// autorepetycji
+	if( keytime >= arTime )
+ 1c8:	20 91 14 20 	lds	r18, 0x2014
+ 1cc:	30 91 15 20 	lds	r19, 0x2015
+ 1d0:	80 91 10 20 	lds	r24, 0x2010
+ 1d4:	90 91 11 20 	lds	r25, 0x2011
+ 1d8:	28 17       	cp	r18, r24
+ 1da:	39 07       	cpc	r19, r25
+ 1dc:	08 f4       	brcc	.+2      	; 0x1e0 <KeybProc+0x64>
+ 1de:	3f c0       	rjmp	.+126    	; 0x25e <KeybProc+0xe2>
+	{
+		// Zwiêkszenie licznika autorepetycji
+		keycnt++;
+ 1e0:	80 91 16 20 	lds	r24, 0x2016
+ 1e4:	90 91 17 20 	lds	r25, 0x2017
+ 1e8:	01 96       	adiw	r24, 0x01	; 1
+ 1ea:	80 93 16 20 	sts	0x2016, r24
+ 1ee:	90 93 17 20 	sts	0x2017, r25
+		
+		// Obliczenie kolejnego czasu autorepetycji
+		_art = art;
+ 1f2:	80 91 00 20 	lds	r24, 0x2000
+ 1f6:	90 91 01 20 	lds	r25, 0x2001
+ 1fa:	80 93 02 20 	sts	0x2002, r24
+ 1fe:	90 93 03 20 	sts	0x2003, r25
+		if( _art[ arIndex + 1 ]) arIndex++;
+ 202:	20 91 02 20 	lds	r18, 0x2002
+ 206:	30 91 03 20 	lds	r19, 0x2003
+ 20a:	80 91 0f 20 	lds	r24, 0x200F
+ 20e:	e8 2f       	mov	r30, r24
+ 210:	f0 e0       	ldi	r31, 0x00	; 0
+ 212:	31 96       	adiw	r30, 0x01	; 1
+ 214:	ee 0f       	add	r30, r30
+ 216:	ff 1f       	adc	r31, r31
+ 218:	e2 0f       	add	r30, r18
+ 21a:	f3 1f       	adc	r31, r19
+ 21c:	80 81       	ld	r24, Z
+ 21e:	91 81       	ldd	r25, Z+1	; 0x01
+ 220:	89 2b       	or	r24, r25
+ 222:	29 f0       	breq	.+10     	; 0x22e <KeybProc+0xb2>
+ 224:	80 91 0f 20 	lds	r24, 0x200F
+ 228:	8f 5f       	subi	r24, 0xFF	; 255
+ 22a:	80 93 0f 20 	sts	0x200F, r24
+		arTime += _art[ arIndex ];
+ 22e:	40 91 02 20 	lds	r20, 0x2002
+ 232:	50 91 03 20 	lds	r21, 0x2003
+ 236:	80 91 0f 20 	lds	r24, 0x200F
+ 23a:	20 91 10 20 	lds	r18, 0x2010
+ 23e:	30 91 11 20 	lds	r19, 0x2011
+ 242:	e8 2f       	mov	r30, r24
+ 244:	f0 e0       	ldi	r31, 0x00	; 0
+ 246:	ee 0f       	add	r30, r30
+ 248:	ff 1f       	adc	r31, r31
+ 24a:	e4 0f       	add	r30, r20
+ 24c:	f5 1f       	adc	r31, r21
+ 24e:	80 81       	ld	r24, Z
+ 250:	91 81       	ldd	r25, Z+1	; 0x01
+ 252:	82 0f       	add	r24, r18
+ 254:	93 1f       	adc	r25, r19
+ 256:	80 93 10 20 	sts	0x2010, r24
+ 25a:	90 93 11 20 	sts	0x2011, r25
+ 25e:	08 95       	ret
+
+00000260 <_Z12OnShortPressv>:
+}
+
+
+void OnShortPress()
+{
+	switch(state)
+ 260:	80 91 05 20 	lds	r24, 0x2005
+ 264:	82 30       	cpi	r24, 0x02	; 2
+ 266:	69 f0       	breq	.+26     	; 0x282 <_Z12OnShortPressv+0x22>
+ 268:	28 f0       	brcs	.+10     	; 0x274 <_Z12OnShortPressv+0x14>
+ 26a:	83 30       	cpi	r24, 0x03	; 3
+ 26c:	d9 f0       	breq	.+54     	; 0x2a4 <_Z12OnShortPressv+0x44>
+ 26e:	84 30       	cpi	r24, 0x04	; 4
+ 270:	51 f1       	breq	.+84     	; 0x2c6 <_Z12OnShortPressv+0x66>
+ 272:	08 95       	ret
+	{
+		case STATE_OFF:
+		case STATE_ON:
+			przyciskState^=1;
+ 274:	90 91 04 20 	lds	r25, 0x2004
+ 278:	81 e0       	ldi	r24, 0x01	; 1
+ 27a:	89 27       	eor	r24, r25
+ 27c:	80 93 04 20 	sts	0x2004, r24
+			break;
+ 280:	08 95       	ret
+		case STATE_SET_H:
+			state = STATE_SET_S;
+ 282:	83 e0       	ldi	r24, 0x03	; 3
+ 284:	80 93 05 20 	sts	0x2005, r24
+{
+	return static_cast<uint8_t>(EncoderTimer.CNT/4);
+}
+inline void Enkoder::SetVal(uint8_t val)
+{
+	EncoderTimer.CNT = val*4;
+ 288:	e0 91 0c 20 	lds	r30, 0x200C
+ 28c:	f0 91 0d 20 	lds	r31, 0x200D
+ 290:	80 91 1f 20 	lds	r24, 0x201F
+ 294:	90 e0       	ldi	r25, 0x00	; 0
+ 296:	88 0f       	add	r24, r24
+ 298:	99 1f       	adc	r25, r25
+ 29a:	88 0f       	add	r24, r24
+ 29c:	99 1f       	adc	r25, r25
+ 29e:	80 a3       	std	Z+32, r24	; 0x20
+ 2a0:	91 a3       	std	Z+33, r25	; 0x21
+ 2a2:	08 95       	ret
+			;
+			Enkoder::SetVal(led.currentHsv.s);
+			break;
+		case STATE_SET_S:
+			state = STATE_SET_V;			
+ 2a4:	84 e0       	ldi	r24, 0x04	; 4
+ 2a6:	80 93 05 20 	sts	0x2005, r24
+ 2aa:	e0 91 0c 20 	lds	r30, 0x200C
+ 2ae:	f0 91 0d 20 	lds	r31, 0x200D
+ 2b2:	80 91 20 20 	lds	r24, 0x2020
+ 2b6:	90 e0       	ldi	r25, 0x00	; 0
+ 2b8:	88 0f       	add	r24, r24
+ 2ba:	99 1f       	adc	r25, r25
+ 2bc:	88 0f       	add	r24, r24
+ 2be:	99 1f       	adc	r25, r25
+ 2c0:	80 a3       	std	Z+32, r24	; 0x20
+ 2c2:	91 a3       	std	Z+33, r25	; 0x21
+ 2c4:	08 95       	ret
+			Enkoder::SetVal(led.currentHsv.v);
+			break;
+		case STATE_SET_V:
+			state = STATE_SET_H;			
+ 2c6:	82 e0       	ldi	r24, 0x02	; 2
+ 2c8:	80 93 05 20 	sts	0x2005, r24
+ 2cc:	e0 91 0c 20 	lds	r30, 0x200C
+ 2d0:	f0 91 0d 20 	lds	r31, 0x200D
+ 2d4:	80 91 1e 20 	lds	r24, 0x201E
+ 2d8:	90 e0       	ldi	r25, 0x00	; 0
+ 2da:	88 0f       	add	r24, r24
+ 2dc:	99 1f       	adc	r25, r25
+ 2de:	88 0f       	add	r24, r24
+ 2e0:	99 1f       	adc	r25, r25
+ 2e2:	80 a3       	std	Z+32, r24	; 0x20
+ 2e4:	91 a3       	std	Z+33, r25	; 0x21
+ 2e6:	08 95       	ret
+
+000002e8 <_Z11OnLongPressv>:
+	led.SetRgb(tmp);
+	_delay_ms(1);
+};
+
+void OnLongPress()
+{
+ 2e8:	cf 93       	push	r28
+ 2ea:	df 93       	push	r29
+	switch(state)
+ 2ec:	80 91 05 20 	lds	r24, 0x2005
+ 2f0:	81 30       	cpi	r24, 0x01	; 1
+ 2f2:	61 f0       	breq	.+24     	; 0x30c <_Z11OnLongPressv+0x24>
+ 2f4:	20 f0       	brcs	.+8      	; 0x2fe <_Z11OnLongPressv+0x16>
+ 2f6:	85 30       	cpi	r24, 0x05	; 5
+ 2f8:	08 f0       	brcs	.+2      	; 0x2fc <_Z11OnLongPressv+0x14>
+ 2fa:	de c0       	rjmp	.+444    	; 0x4b8 <_Z11OnLongPressv+0x1d0>
+ 2fc:	6a c0       	rjmp	.+212    	; 0x3d2 <_Z11OnLongPressv+0xea>
+	{
+		case STATE_OFF:
+			przyciskState^=1;
+ 2fe:	90 91 04 20 	lds	r25, 0x2004
+ 302:	81 e0       	ldi	r24, 0x01	; 1
+ 304:	89 27       	eor	r24, r25
+ 306:	80 93 04 20 	sts	0x2004, r24
+			break;
+ 30a:	d6 c0       	rjmp	.+428    	; 0x4b8 <_Z11OnLongPressv+0x1d0>
+		case STATE_ON:
+			state = STATE_SET_H;
+ 30c:	82 e0       	ldi	r24, 0x02	; 2
+ 30e:	80 93 05 20 	sts	0x2005, r24
+		savedRgb = Rgb(r,g,b);
+		
+	}
+	inline Rgb GetRgb()
+	{
+		return Rgb(tc->CCA, tc->CCB, tc->CCC);
+ 312:	e0 91 25 20 	lds	r30, 0x2025
+ 316:	f0 91 26 20 	lds	r31, 0x2026
+ 31a:	24 a5       	ldd	r18, Z+44	; 0x2c
+ 31c:	35 a5       	ldd	r19, Z+45	; 0x2d
+ 31e:	42 a5       	ldd	r20, Z+42	; 0x2a
+ 320:	53 a5       	ldd	r21, Z+43	; 0x2b
+ 322:	60 a5       	ldd	r22, Z+40	; 0x28
+ 324:	71 a5       	ldd	r23, Z+41	; 0x29
+		tc->CCBBUF=rgb.g;
+		tc->CCCBUF=rgb.b;
+	}
+	inline void _set(uint8_t r, uint8_t g, uint8_t b)
+	{
+		if(!tc)return;
+ 326:	30 97       	sbiw	r30, 0x00	; 0
+ 328:	31 f0       	breq	.+12     	; 0x336 <_Z11OnLongPressv+0x4e>
+		tc->CCABUF=r;
+ 32a:	10 ae       	std	Z+56, r1	; 0x38
+ 32c:	11 ae       	std	Z+57, r1	; 0x39
+		tc->CCBBUF=g;
+ 32e:	12 ae       	std	Z+58, r1	; 0x3a
+ 330:	13 ae       	std	Z+59, r1	; 0x3b
+		tc->CCCBUF=b;
+ 332:	14 ae       	std	Z+60, r1	; 0x3c
+ 334:	15 ae       	std	Z+61, r1	; 0x3d
+	}
+	inline void SetRgb(uint8_t r, uint8_t g, uint8_t b)
+	{
+		_set(r,g,b);
+		
+		savedRgb = Rgb(r,g,b);
+ 336:	ee e1       	ldi	r30, 0x1E	; 30
+ 338:	f0 e2       	ldi	r31, 0x20	; 32
+ 33a:	13 82       	std	Z+3, r1	; 0x03
+ 33c:	14 82       	std	Z+4, r1	; 0x04
+ 33e:	15 82       	std	Z+5, r1	; 0x05
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 340:	87 ea       	ldi	r24, 0xA7	; 167
+ 342:	91 e6       	ldi	r25, 0x61	; 97
+ 344:	01 97       	sbiw	r24, 0x01	; 1
+ 346:	f1 f7       	brne	.-4      	; 0x344 <_Z11OnLongPressv+0x5c>
+ 348:	00 c0       	rjmp	.+0      	; 0x34a <_Z11OnLongPressv+0x62>
+ 34a:	00 00       	nop
+		tc->CCBBUF=rgb.g;
+		tc->CCCBUF=rgb.b;
+	}
+	inline void _set(uint8_t r, uint8_t g, uint8_t b)
+	{
+		if(!tc)return;
+ 34c:	07 80       	ldd	r0, Z+7	; 0x07
+ 34e:	f0 85       	ldd	r31, Z+8	; 0x08
+ 350:	e0 2d       	mov	r30, r0
+ 352:	30 97       	sbiw	r30, 0x00	; 0
+ 354:	41 f0       	breq	.+16     	; 0x366 <_Z11OnLongPressv+0x7e>
+		tc->CCABUF=r;
+ 356:	8f ef       	ldi	r24, 0xFF	; 255
+ 358:	90 e0       	ldi	r25, 0x00	; 0
+ 35a:	80 af       	std	Z+56, r24	; 0x38
+ 35c:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=g;
+ 35e:	82 af       	std	Z+58, r24	; 0x3a
+ 360:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=b;
+ 362:	84 af       	std	Z+60, r24	; 0x3c
+ 364:	95 af       	std	Z+61, r25	; 0x3d
+	}
+	inline void SetRgb(uint8_t r, uint8_t g, uint8_t b)
+	{
+		_set(r,g,b);
+		
+		savedRgb = Rgb(r,g,b);
+ 366:	ee e1       	ldi	r30, 0x1E	; 30
+ 368:	f0 e2       	ldi	r31, 0x20	; 32
+ 36a:	8f ef       	ldi	r24, 0xFF	; 255
+ 36c:	83 83       	std	Z+3, r24	; 0x03
+ 36e:	84 83       	std	Z+4, r24	; 0x04
+ 370:	85 83       	std	Z+5, r24	; 0x05
+ 372:	87 ea       	ldi	r24, 0xA7	; 167
+ 374:	91 e6       	ldi	r25, 0x61	; 97
+ 376:	01 97       	sbiw	r24, 0x01	; 1
+ 378:	f1 f7       	brne	.-4      	; 0x376 <_Z11OnLongPressv+0x8e>
+ 37a:	00 c0       	rjmp	.+0      	; 0x37c <_Z11OnLongPressv+0x94>
+ 37c:	00 00       	nop
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 37e:	07 80       	ldd	r0, Z+7	; 0x07
+ 380:	f0 85       	ldd	r31, Z+8	; 0x08
+ 382:	e0 2d       	mov	r30, r0
+ 384:	30 97       	sbiw	r30, 0x00	; 0
+ 386:	61 f0       	breq	.+24     	; 0x3a0 <_Z11OnLongPressv+0xb8>
+		tc->CCABUF=rgb.r;
+ 388:	cb 01       	movw	r24, r22
+ 38a:	99 27       	eor	r25, r25
+ 38c:	80 af       	std	Z+56, r24	; 0x38
+ 38e:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=rgb.g;
+ 390:	ca 01       	movw	r24, r20
+ 392:	99 27       	eor	r25, r25
+ 394:	82 af       	std	Z+58, r24	; 0x3a
+ 396:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=rgb.b;
+ 398:	c9 01       	movw	r24, r18
+ 39a:	99 27       	eor	r25, r25
+ 39c:	84 af       	std	Z+60, r24	; 0x3c
+ 39e:	95 af       	std	Z+61, r25	; 0x3d
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 3a0:	ee e1       	ldi	r30, 0x1E	; 30
+ 3a2:	f0 e2       	ldi	r31, 0x20	; 32
+ 3a4:	63 83       	std	Z+3, r22	; 0x03
+ 3a6:	44 83       	std	Z+4, r20	; 0x04
+ 3a8:	25 83       	std	Z+5, r18	; 0x05
+ 3aa:	83 ef       	ldi	r24, 0xF3	; 243
+ 3ac:	91 e0       	ldi	r25, 0x01	; 1
+ 3ae:	01 97       	sbiw	r24, 0x01	; 1
+ 3b0:	f1 f7       	brne	.-4      	; 0x3ae <_Z11OnLongPressv+0xc6>
+ 3b2:	00 c0       	rjmp	.+0      	; 0x3b4 <_Z11OnLongPressv+0xcc>
+ 3b4:	00 00       	nop
+ 3b6:	20 91 0c 20 	lds	r18, 0x200C
+ 3ba:	30 91 0d 20 	lds	r19, 0x200D
+ 3be:	80 81       	ld	r24, Z
+ 3c0:	90 e0       	ldi	r25, 0x00	; 0
+ 3c2:	88 0f       	add	r24, r24
+ 3c4:	99 1f       	adc	r25, r25
+ 3c6:	88 0f       	add	r24, r24
+ 3c8:	99 1f       	adc	r25, r25
+ 3ca:	f9 01       	movw	r30, r18
+ 3cc:	80 a3       	std	Z+32, r24	; 0x20
+ 3ce:	91 a3       	std	Z+33, r25	; 0x21
+ 3d0:	73 c0       	rjmp	.+230    	; 0x4b8 <_Z11OnLongPressv+0x1d0>
+			Enkoder::SetVal(led.currentHsv.h);
+			break;
+		case STATE_SET_H:
+		case STATE_SET_S:
+		case STATE_SET_V:
+			state = STATE_ON;
+ 3d2:	81 e0       	ldi	r24, 0x01	; 1
+ 3d4:	80 93 05 20 	sts	0x2005, r24
+		savedRgb = Rgb(r,g,b);
+		
+	}
+	inline Rgb GetRgb()
+	{
+		return Rgb(tc->CCA, tc->CCB, tc->CCC);
+ 3d8:	e0 91 25 20 	lds	r30, 0x2025
+ 3dc:	f0 91 26 20 	lds	r31, 0x2026
+ 3e0:	24 a5       	ldd	r18, Z+44	; 0x2c
+ 3e2:	35 a5       	ldd	r19, Z+45	; 0x2d
+ 3e4:	42 a5       	ldd	r20, Z+42	; 0x2a
+ 3e6:	53 a5       	ldd	r21, Z+43	; 0x2b
+ 3e8:	60 a5       	ldd	r22, Z+40	; 0x28
+ 3ea:	71 a5       	ldd	r23, Z+41	; 0x29
+		tc->CCBBUF=rgb.g;
+		tc->CCCBUF=rgb.b;
+	}
+	inline void _set(uint8_t r, uint8_t g, uint8_t b)
+	{
+		if(!tc)return;
+ 3ec:	30 97       	sbiw	r30, 0x00	; 0
+ 3ee:	31 f0       	breq	.+12     	; 0x3fc <_Z11OnLongPressv+0x114>
+		tc->CCABUF=r;
+ 3f0:	10 ae       	std	Z+56, r1	; 0x38
+ 3f2:	11 ae       	std	Z+57, r1	; 0x39
+		tc->CCBBUF=g;
+ 3f4:	12 ae       	std	Z+58, r1	; 0x3a
+ 3f6:	13 ae       	std	Z+59, r1	; 0x3b
+		tc->CCCBUF=b;
+ 3f8:	14 ae       	std	Z+60, r1	; 0x3c
+ 3fa:	15 ae       	std	Z+61, r1	; 0x3d
+	}
+	inline void SetRgb(uint8_t r, uint8_t g, uint8_t b)
+	{
+		_set(r,g,b);
+		
+		savedRgb = Rgb(r,g,b);
+ 3fc:	ee e1       	ldi	r30, 0x1E	; 30
+ 3fe:	f0 e2       	ldi	r31, 0x20	; 32
+ 400:	13 82       	std	Z+3, r1	; 0x03
+ 402:	14 82       	std	Z+4, r1	; 0x04
+ 404:	15 82       	std	Z+5, r1	; 0x05
+ 406:	87 ea       	ldi	r24, 0xA7	; 167
+ 408:	91 e6       	ldi	r25, 0x61	; 97
+ 40a:	01 97       	sbiw	r24, 0x01	; 1
+ 40c:	f1 f7       	brne	.-4      	; 0x40a <_Z11OnLongPressv+0x122>
+ 40e:	00 c0       	rjmp	.+0      	; 0x410 <_Z11OnLongPressv+0x128>
+ 410:	00 00       	nop
+		tc->CCBBUF=rgb.g;
+		tc->CCCBUF=rgb.b;
+	}
+	inline void _set(uint8_t r, uint8_t g, uint8_t b)
+	{
+		if(!tc)return;
+ 412:	07 80       	ldd	r0, Z+7	; 0x07
+ 414:	f0 85       	ldd	r31, Z+8	; 0x08
+ 416:	e0 2d       	mov	r30, r0
+ 418:	30 97       	sbiw	r30, 0x00	; 0
+ 41a:	41 f0       	breq	.+16     	; 0x42c <_Z11OnLongPressv+0x144>
+		tc->CCABUF=r;
+ 41c:	8f ef       	ldi	r24, 0xFF	; 255
+ 41e:	90 e0       	ldi	r25, 0x00	; 0
+ 420:	80 af       	std	Z+56, r24	; 0x38
+ 422:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=g;
+ 424:	82 af       	std	Z+58, r24	; 0x3a
+ 426:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=b;
+ 428:	84 af       	std	Z+60, r24	; 0x3c
+ 42a:	95 af       	std	Z+61, r25	; 0x3d
+	}
+	inline void SetRgb(uint8_t r, uint8_t g, uint8_t b)
+	{
+		_set(r,g,b);
+		
+		savedRgb = Rgb(r,g,b);
+ 42c:	ee e1       	ldi	r30, 0x1E	; 30
+ 42e:	f0 e2       	ldi	r31, 0x20	; 32
+ 430:	8f ef       	ldi	r24, 0xFF	; 255
+ 432:	83 83       	std	Z+3, r24	; 0x03
+ 434:	84 83       	std	Z+4, r24	; 0x04
+ 436:	85 83       	std	Z+5, r24	; 0x05
+ 438:	87 ea       	ldi	r24, 0xA7	; 167
+ 43a:	91 e6       	ldi	r25, 0x61	; 97
+ 43c:	01 97       	sbiw	r24, 0x01	; 1
+ 43e:	f1 f7       	brne	.-4      	; 0x43c <_Z11OnLongPressv+0x154>
+ 440:	00 c0       	rjmp	.+0      	; 0x442 <_Z11OnLongPressv+0x15a>
+ 442:	00 00       	nop
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 444:	07 80       	ldd	r0, Z+7	; 0x07
+ 446:	f0 85       	ldd	r31, Z+8	; 0x08
+ 448:	e0 2d       	mov	r30, r0
+ 44a:	30 97       	sbiw	r30, 0x00	; 0
+ 44c:	61 f0       	breq	.+24     	; 0x466 <_Z11OnLongPressv+0x17e>
+		tc->CCABUF=rgb.r;
+ 44e:	cb 01       	movw	r24, r22
+ 450:	99 27       	eor	r25, r25
+ 452:	80 af       	std	Z+56, r24	; 0x38
+ 454:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=rgb.g;
+ 456:	ca 01       	movw	r24, r20
+ 458:	99 27       	eor	r25, r25
+ 45a:	82 af       	std	Z+58, r24	; 0x3a
+ 45c:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=rgb.b;
+ 45e:	c9 01       	movw	r24, r18
+ 460:	99 27       	eor	r25, r25
+ 462:	84 af       	std	Z+60, r24	; 0x3c
+ 464:	95 af       	std	Z+61, r25	; 0x3d
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 466:	ce e1       	ldi	r28, 0x1E	; 30
+ 468:	d0 e2       	ldi	r29, 0x20	; 32
+ 46a:	6b 83       	std	Y+3, r22	; 0x03
+ 46c:	4c 83       	std	Y+4, r20	; 0x04
+ 46e:	2d 83       	std	Y+5, r18	; 0x05
+ 470:	83 ef       	ldi	r24, 0xF3	; 243
+ 472:	91 e0       	ldi	r25, 0x01	; 1
+ 474:	01 97       	sbiw	r24, 0x01	; 1
+ 476:	f1 f7       	brne	.-4      	; 0x474 <_Z11OnLongPressv+0x18c>
+ 478:	00 c0       	rjmp	.+0      	; 0x47a <_Z11OnLongPressv+0x192>
+ 47a:	00 00       	nop
+	EEMEM uint8_t eeV;
+
+	inline void SaveEEProm(const RgbController &rgb)
+	{
+		//zapisuje aktualny kolor
+		eeprom_write_byte(&eeR, rgb.savedRgb.r);
+ 47c:	6b 81       	ldd	r22, Y+3	; 0x03
+ 47e:	85 e0       	ldi	r24, 0x05	; 5
+ 480:	90 e0       	ldi	r25, 0x00	; 0
+ 482:	0e 94 0b 06 	call	0xc16	; 0xc16 <eeprom_write_byte>
+		eeprom_write_byte(&eeG, rgb.savedRgb.g);
+ 486:	6c 81       	ldd	r22, Y+4	; 0x04
+ 488:	84 e0       	ldi	r24, 0x04	; 4
+ 48a:	90 e0       	ldi	r25, 0x00	; 0
+ 48c:	0e 94 0b 06 	call	0xc16	; 0xc16 <eeprom_write_byte>
+		eeprom_write_byte(&eeB, rgb.savedRgb.b);
+ 490:	6d 81       	ldd	r22, Y+5	; 0x05
+ 492:	83 e0       	ldi	r24, 0x03	; 3
+ 494:	90 e0       	ldi	r25, 0x00	; 0
+ 496:	0e 94 0b 06 	call	0xc16	; 0xc16 <eeprom_write_byte>
+		
+		eeprom_write_byte(&eeH, rgb.currentHsv.h);
+ 49a:	68 81       	ld	r22, Y
+ 49c:	82 e0       	ldi	r24, 0x02	; 2
+ 49e:	90 e0       	ldi	r25, 0x00	; 0
+ 4a0:	0e 94 0b 06 	call	0xc16	; 0xc16 <eeprom_write_byte>
+		eeprom_write_byte(&eeS, rgb.currentHsv.s);
+ 4a4:	69 81       	ldd	r22, Y+1	; 0x01
+ 4a6:	81 e0       	ldi	r24, 0x01	; 1
+ 4a8:	90 e0       	ldi	r25, 0x00	; 0
+ 4aa:	0e 94 0b 06 	call	0xc16	; 0xc16 <eeprom_write_byte>
+		eeprom_write_byte(&eeV, rgb.currentHsv.v);
+ 4ae:	6a 81       	ldd	r22, Y+2	; 0x02
+ 4b0:	80 e0       	ldi	r24, 0x00	; 0
+ 4b2:	90 e0       	ldi	r25, 0x00	; 0
+ 4b4:	0e 94 0b 06 	call	0xc16	; 0xc16 <eeprom_write_byte>
+			DelayBlink();		
+			SaveEEProm(led);
+			break;
+	}
+}
+ 4b8:	df 91       	pop	r29
+ 4ba:	cf 91       	pop	r28
+ 4bc:	08 95       	ret
+
+000004be <__vector_18>:
+bool przyciskState = true;
+
+
+volatile bool timerFlag = false;
+ISR(TCC5_OVF_vect)
+{
+ 4be:	1f 92       	push	r1
+ 4c0:	0f 92       	push	r0
+ 4c2:	0f b6       	in	r0, 0x3f	; 63
+ 4c4:	0f 92       	push	r0
+ 4c6:	11 24       	eor	r1, r1
+ 4c8:	2f 93       	push	r18
+ 4ca:	3f 93       	push	r19
+ 4cc:	4f 93       	push	r20
+ 4ce:	5f 93       	push	r21
+ 4d0:	6f 93       	push	r22
+ 4d2:	7f 93       	push	r23
+ 4d4:	8f 93       	push	r24
+ 4d6:	9f 93       	push	r25
+ 4d8:	af 93       	push	r26
+ 4da:	bf 93       	push	r27
+ 4dc:	ef 93       	push	r30
+ 4de:	ff 93       	push	r31
+	TCC5.INTFLAGS=TC5_OVFIF_bm;
+ 4e0:	81 e0       	ldi	r24, 0x01	; 1
+ 4e2:	80 93 4c 08 	sts	0x084C, r24
+	
+	KeybProc();
+ 4e6:	0e 94 be 00 	call	0x17c	; 0x17c <KeybProc>
+	
+	if(state == STATE_OFF || state == STATE_ON) timerFlag = true;
+ 4ea:	80 91 05 20 	lds	r24, 0x2005
+ 4ee:	82 30       	cpi	r24, 0x02	; 2
+ 4f0:	18 f4       	brcc	.+6      	; 0x4f8 <__vector_18+0x3a>
+ 4f2:	81 e0       	ldi	r24, 0x01	; 1
+ 4f4:	80 93 1d 20 	sts	0x201D, r24
+		
+}
+ 4f8:	ff 91       	pop	r31
+ 4fa:	ef 91       	pop	r30
+ 4fc:	bf 91       	pop	r27
+ 4fe:	af 91       	pop	r26
+ 500:	9f 91       	pop	r25
+ 502:	8f 91       	pop	r24
+ 504:	7f 91       	pop	r23
+ 506:	6f 91       	pop	r22
+ 508:	5f 91       	pop	r21
+ 50a:	4f 91       	pop	r20
+ 50c:	3f 91       	pop	r19
+ 50e:	2f 91       	pop	r18
+ 510:	0f 90       	pop	r0
+ 512:	0f be       	out	0x3f, r0	; 63
+ 514:	0f 90       	pop	r0
+ 516:	1f 90       	pop	r1
+ 518:	18 95       	reti
+
+0000051a <_Z15CheckPressedKeyPFvvES0_>:
+	timer.INTCTRLA = TC45_OVFINTLVL_LO_gc;
+	timer.CTRLA = TC45_CLKSEL_DIV8_gc;
+}
+
+void CheckPressedKey(void(*shortPressProc)(),void(*longPressProc)())
+{
+ 51a:	0f 93       	push	r16
+ 51c:	1f 93       	push	r17
+ 51e:	cf 93       	push	r28
+ 520:	df 93       	push	r29
+ 522:	8c 01       	movw	r16, r24
+ 524:	eb 01       	movw	r28, r22
+	static char _key;
+	static uint16_t _key_time;
+	
+	if( IsKeyPressed(KEY))
+ 526:	84 e0       	ldi	r24, 0x04	; 4
+ 528:	90 e0       	ldi	r25, 0x00	; 0
+ 52a:	0e 94 8e 00 	call	0x11c	; 0x11c <IsKeyPressed>
+ 52e:	89 2b       	or	r24, r25
+ 530:	51 f0       	breq	.+20     	; 0x546 <_Z15CheckPressedKeyPFvvES0_+0x2c>
+	{
+		_key = 1;
+ 532:	81 e0       	ldi	r24, 0x01	; 1
+ 534:	80 93 1c 20 	sts	0x201C, r24
+		_key_time = KeysTime();
+ 538:	0e 94 89 00 	call	0x112	; 0x112 <KeysTime>
+ 53c:	80 93 1a 20 	sts	0x201A, r24
+ 540:	90 93 1b 20 	sts	0x201B, r25
+ 544:	0e c0       	rjmp	.+28     	; 0x562 <_Z15CheckPressedKeyPFvvES0_+0x48>
+	}
+	else if ( _key )
+ 546:	90 91 1c 20 	lds	r25, 0x201C
+ 54a:	99 23       	and	r25, r25
+ 54c:	51 f0       	breq	.+20     	; 0x562 <_Z15CheckPressedKeyPFvvES0_+0x48>
+	{
+		_key = 0;
+ 54e:	10 92 1c 20 	sts	0x201C, r1
+		if( _key_time < 30 )
+ 552:	80 91 1a 20 	lds	r24, 0x201A
+ 556:	90 91 1b 20 	lds	r25, 0x201B
+ 55a:	4e 97       	sbiw	r24, 0x1e	; 30
+ 55c:	10 f4       	brcc	.+4      	; 0x562 <_Z15CheckPressedKeyPFvvES0_+0x48>
+		{
+			shortPressProc();
+ 55e:	f8 01       	movw	r30, r16
+ 560:	09 95       	icall
+		}
+	}
+
+	if( IsKeyPressed(KEY) && KeysTime() > 100 )
+ 562:	84 e0       	ldi	r24, 0x04	; 4
+ 564:	90 e0       	ldi	r25, 0x00	; 0
+ 566:	0e 94 8e 00 	call	0x11c	; 0x11c <IsKeyPressed>
+ 56a:	89 2b       	or	r24, r25
+ 56c:	59 f0       	breq	.+22     	; 0x584 <_Z15CheckPressedKeyPFvvES0_+0x6a>
+ 56e:	0e 94 89 00 	call	0x112	; 0x112 <KeysTime>
+ 572:	85 36       	cpi	r24, 0x65	; 101
+ 574:	91 05       	cpc	r25, r1
+ 576:	30 f0       	brcs	.+12     	; 0x584 <_Z15CheckPressedKeyPFvvES0_+0x6a>
+	{
+		longPressProc();
+ 578:	fe 01       	movw	r30, r28
+ 57a:	09 95       	icall
+		ClrKeyb(KBD_LOCK);
+ 57c:	81 e0       	ldi	r24, 0x01	; 1
+ 57e:	90 e0       	ldi	r25, 0x00	; 0
+ 580:	0e 94 95 00 	call	0x12a	; 0x12a <ClrKeyb>
+		// Tutaj kod reakcji na naciœniecie klawisza KEY
+		// Kod wykona siê tylko wtedy gdy czas trzymania klawisza przekroczy 1s
+	}
+}
+ 584:	df 91       	pop	r29
+ 586:	cf 91       	pop	r28
+ 588:	1f 91       	pop	r17
+ 58a:	0f 91       	pop	r16
+ 58c:	08 95       	ret
+
+0000058e <main>:
+		return hsv;
+	}
+
+	inline void Init(PORT_t& port, TC4_t& timer)
+	{
+		on=true;
+ 58e:	ce e1       	ldi	r28, 0x1E	; 30
+ 590:	d0 e2       	ldi	r29, 0x20	; 32
+ 592:	11 e0       	ldi	r17, 0x01	; 1
+ 594:	1e 83       	std	Y+6, r17	; 0x06
+
+		tc = &timer;
+ 596:	e0 e0       	ldi	r30, 0x00	; 0
+ 598:	f8 e0       	ldi	r31, 0x08	; 8
+ 59a:	ef 83       	std	Y+7, r30	; 0x07
+ 59c:	f8 87       	std	Y+8, r31	; 0x08
+		currentHsv = Hsv(0,255,255);
+ 59e:	18 82       	st	Y, r1
+ 5a0:	8f ef       	ldi	r24, 0xFF	; 255
+ 5a2:	89 83       	std	Y+1, r24	; 0x01
+ 5a4:	8a 83       	std	Y+2, r24	; 0x02
+		savedRgb = Rgb(255,0,0);
+ 5a6:	8b 83       	std	Y+3, r24	; 0x03
+ 5a8:	1c 82       	std	Y+4, r1	; 0x04
+ 5aa:	1d 82       	std	Y+5, r1	; 0x05
+		
+		port.DIRSET=0x07; //pin 0-2
+ 5ac:	87 e0       	ldi	r24, 0x07	; 7
+ 5ae:	80 93 41 06 	sts	0x0641, r24
+		
+		timer.CTRLB = TC45_WGMODE_SINGLESLOPE_gc;
+ 5b2:	03 e0       	ldi	r16, 0x03	; 3
+ 5b4:	01 83       	std	Z+1, r16	; 0x01
+		timer.CTRLE = TC45_CCAMODE_COMP_gc | TC45_CCBMODE_COMP_gc | TC45_CCCMODE_COMP_gc;
+ 5b6:	85 e1       	ldi	r24, 0x15	; 21
+ 5b8:	84 83       	std	Z+4, r24	; 0x04
+		timer.PER=256;
+ 5ba:	80 e0       	ldi	r24, 0x00	; 0
+ 5bc:	91 e0       	ldi	r25, 0x01	; 1
+ 5be:	86 a3       	std	Z+38, r24	; 0x26
+ 5c0:	97 a3       	std	Z+39, r25	; 0x27
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+ 5c2:	85 e0       	ldi	r24, 0x05	; 5
+ 5c4:	80 83       	st	Z, r24
+
+	}
+	inline void LoadEEProm(RgbController &rgb)
+	{
+		rgb.savedRgb.r = eeprom_read_byte(&eeR);
+ 5c6:	85 e0       	ldi	r24, 0x05	; 5
+ 5c8:	90 e0       	ldi	r25, 0x00	; 0
+ 5ca:	0e 94 03 06 	call	0xc06	; 0xc06 <eeprom_read_byte>
+ 5ce:	8b 83       	std	Y+3, r24	; 0x03
+		rgb.savedRgb.g = eeprom_read_byte(&eeG);
+ 5d0:	84 e0       	ldi	r24, 0x04	; 4
+ 5d2:	90 e0       	ldi	r25, 0x00	; 0
+ 5d4:	0e 94 03 06 	call	0xc06	; 0xc06 <eeprom_read_byte>
+ 5d8:	8c 83       	std	Y+4, r24	; 0x04
+		rgb.savedRgb.b = eeprom_read_byte(&eeB);
+ 5da:	83 e0       	ldi	r24, 0x03	; 3
+ 5dc:	90 e0       	ldi	r25, 0x00	; 0
+ 5de:	0e 94 03 06 	call	0xc06	; 0xc06 <eeprom_read_byte>
+ 5e2:	8d 83       	std	Y+5, r24	; 0x05
+		
+		rgb.currentHsv.h = eeprom_read_byte(&eeB);
+ 5e4:	83 e0       	ldi	r24, 0x03	; 3
+ 5e6:	90 e0       	ldi	r25, 0x00	; 0
+ 5e8:	0e 94 03 06 	call	0xc06	; 0xc06 <eeprom_read_byte>
+ 5ec:	88 83       	st	Y, r24
+		rgb.currentHsv.s = eeprom_read_byte(&eeS);
+ 5ee:	81 e0       	ldi	r24, 0x01	; 1
+ 5f0:	90 e0       	ldi	r25, 0x00	; 0
+ 5f2:	0e 94 03 06 	call	0xc06	; 0xc06 <eeprom_read_byte>
+ 5f6:	89 83       	std	Y+1, r24	; 0x01
+		rgb.currentHsv.v = eeprom_read_byte(&eeV);
+ 5f8:	80 e0       	ldi	r24, 0x00	; 0
+ 5fa:	90 e0       	ldi	r25, 0x00	; 0
+ 5fc:	0e 94 03 06 	call	0xc06	; 0xc06 <eeprom_read_byte>
+ 600:	8a 83       	std	Y+2, r24	; 0x02
+}
+
+inline void Enkoder::Init()
+{
+	 // wejœcia enkodera
+	 PORTCFG.MPCMASK    =    0b00000011;                       // wybór pinów 0 i 1 do konfiguracji
+ 602:	00 93 b0 00 	sts	0x00B0, r16
+	 EncoderPort.PIN0CTRL     =    PORT_ISC_LEVEL_gc |               // reagowanie na poziom niski
+	 PORT_OPC_PULLUP_gc;               // podci¹gniêcie do zasilania
+ 606:	e0 91 0a 20 	lds	r30, 0x200A
+ 60a:	f0 91 0b 20 	lds	r31, 0x200B
+ 60e:	8b e1       	ldi	r24, 0x1B	; 27
+ 610:	80 8b       	std	Z+16, r24	; 0x10
+	 
+	 // konfiguracja systemu zdarzeñ
+	 EVSYS.CH0MUX       =    EVSYS_CHMUX_PORTD_PIN0_gc;        // pin C0 wywo³uje zdarzenie
+ 612:	e0 e8       	ldi	r30, 0x80	; 128
+ 614:	f1 e0       	ldi	r31, 0x01	; 1
+ 616:	88 e6       	ldi	r24, 0x68	; 104
+ 618:	80 83       	st	Z, r24
+	 EVSYS.CH0CTRL      =    EVSYS_QDEN_bm|                    // w³¹czenie dekodera w systemie zdarzeñ
+	 EVSYS_DIGFILT_8SAMPLES_gc;        // filtr cyfrowy
+ 61a:	8f e0       	ldi	r24, 0x0F	; 15
+ 61c:	80 87       	std	Z+8, r24	; 0x08
+	 
+	 // konfiguracja timera
+	 EncoderTimer.PER			=	 1024;
+ 61e:	e0 91 0c 20 	lds	r30, 0x200C
+ 622:	f0 91 0d 20 	lds	r31, 0x200D
+ 626:	80 e0       	ldi	r24, 0x00	; 0
+ 628:	94 e0       	ldi	r25, 0x04	; 4
+ 62a:	86 a3       	std	Z+38, r24	; 0x26
+ 62c:	97 a3       	std	Z+39, r25	; 0x27
+	 EncoderTimer.CTRLA         =    TC45_CLKSEL_EVCH0_gc;               // taktowanie systemem zdarzeñ
+ 62e:	88 e0       	ldi	r24, 0x08	; 8
+ 630:	80 83       	st	Z, r24
+	 EncoderTimer.CTRLD         =    TC45_EVACT_QDEC_gc |                // w³¹czenie dekodera kwadraturowego
+	 TC45_EVSEL_CH0_gc;                  // dekoder zlicza impulsy z kana³u 0
+ 632:	88 e8       	ldi	r24, 0x88	; 136
+ 634:	83 83       	std	Z+3, r24	; 0x03
+
+
+template<typename Timer>
+inline void InitMainTimer(Timer& timer)
+{
+	timer.CTRLB = TC45_WGMODE_NORMAL_gc;
+ 636:	a0 e4       	ldi	r26, 0x40	; 64
+ 638:	b8 e0       	ldi	r27, 0x08	; 8
+ 63a:	11 96       	adiw	r26, 0x01	; 1
+ 63c:	1c 92       	st	X, r1
+ 63e:	11 97       	sbiw	r26, 0x01	; 1
+	timer.PER=2500;
+ 640:	84 ec       	ldi	r24, 0xC4	; 196
+ 642:	99 e0       	ldi	r25, 0x09	; 9
+ 644:	96 96       	adiw	r26, 0x26	; 38
+ 646:	8d 93       	st	X+, r24
+ 648:	9c 93       	st	X, r25
+ 64a:	97 97       	sbiw	r26, 0x27	; 39
+	timer.INTCTRLA = TC45_OVFINTLVL_LO_gc;
+ 64c:	16 96       	adiw	r26, 0x06	; 6
+ 64e:	1c 93       	st	X, r17
+ 650:	16 97       	sbiw	r26, 0x06	; 6
+	timer.CTRLA = TC45_CLKSEL_DIV8_gc;
+ 652:	84 e0       	ldi	r24, 0x04	; 4
+ 654:	8c 93       	st	X, r24
+	led.Init(PORTC, TCC4);
+	LoadEEProm(led);
+	Enkoder::Init();  
+	InitMainTimer(TCC5);
+	
+	PORTD.DIRCLR = KEY | CZUJNIK | STACYJKA;
+ 656:	a0 e6       	ldi	r26, 0x60	; 96
+ 658:	b6 e0       	ldi	r27, 0x06	; 6
+ 65a:	84 e3       	ldi	r24, 0x34	; 52
+ 65c:	12 96       	adiw	r26, 0x02	; 2
+ 65e:	8c 93       	st	X, r24
+ 660:	12 97       	sbiw	r26, 0x02	; 2
+	PORTD.PIN2CTRL = PORT_OPC_PULLUP_gc;
+ 662:	88 e1       	ldi	r24, 0x18	; 24
+ 664:	52 96       	adiw	r26, 0x12	; 18
+ 666:	8c 93       	st	X, r24
+ 668:	52 97       	sbiw	r26, 0x12	; 18
+	PORTD.PIN4CTRL = PORT_OPC_PULLUP_gc;
+ 66a:	54 96       	adiw	r26, 0x14	; 20
+ 66c:	8c 93       	st	X, r24
+ 66e:	54 97       	sbiw	r26, 0x14	; 20
+	PORTD.PIN5CTRL = PORT_OPC_PULLUP_gc;
+ 670:	55 96       	adiw	r26, 0x15	; 21
+ 672:	8c 93       	st	X, r24
+	
+	PMIC.CTRL         =    PMIC_LOLVLEN_bm;            // odblokowanie przerwañ o priorytecie LO
+ 674:	10 93 a2 00 	sts	0x00A2, r17
+	sei(); 
+ 678:	78 94       	sei
+}
+
+inline uint8_t Enkoder::GetValue()
+{
+	return static_cast<uint8_t>(EncoderTimer.CNT/4);
+ 67a:	7f 01       	movw	r14, r30
+ 67c:	80 a1       	ldd	r24, Z+32	; 0x20
+ 67e:	91 a1       	ldd	r25, Z+33	; 0x21
+ 680:	96 95       	lsr	r25
+ 682:	87 95       	ror	r24
+ 684:	96 95       	lsr	r25
+ 686:	87 95       	ror	r24
+ 688:	18 2f       	mov	r17, r24
+		h = hsv.h;
+		s = hsv.s;
+		v = hsv.v;
+
+		region = h / 43;
+		remainder = (h - (region * 43)) * 6;
+ 68a:	05 ed       	ldi	r16, 0xD5	; 213
+
+		p = (v * (255 - s)) >> 8;
+ 68c:	cc 24       	eor	r12, r12
+ 68e:	ca 94       	dec	r12
+ 690:	d1 2c       	mov	r13, r1
+inline void UpdateState()
+{
+	
+	//formula = (czujnikState || (stacyjkaState && przyciskState));
+	//bool stacyjka = !(PORTD.IN & STACYJKA);
+	bool czujnikState = []()->bool{return !(PORTD.IN & CZUJNIK);}();
+ 692:	0f 2e       	mov	r0, r31
+ 694:	f0 e6       	ldi	r31, 0x60	; 96
+ 696:	af 2e       	mov	r10, r31
+ 698:	f6 e0       	ldi	r31, 0x06	; 6
+ 69a:	bf 2e       	mov	r11, r31
+ 69c:	f0 2d       	mov	r31, r0
+	bool stacyjkaState = []()->bool{return !(PORTD.IN & STACYJKA);}();
+	bool stateFormula = (czujnikState || (przyciskState && stacyjkaState));
+	
+	if(stateFormula)state = STATE_ON;
+ 69e:	77 24       	eor	r7, r7
+ 6a0:	73 94       	inc	r7
+	
+			
+	uint8_t lastVal = Enkoder::GetValue();		
+    while (1) 
+    {
+		/*if(stacyjkaState)*/CheckPressedKey(OnShortPress, OnLongPress);	//sprawdza stan przycisku
+ 6a2:	64 e7       	ldi	r22, 0x74	; 116
+ 6a4:	71 e0       	ldi	r23, 0x01	; 1
+ 6a6:	80 e3       	ldi	r24, 0x30	; 48
+ 6a8:	91 e0       	ldi	r25, 0x01	; 1
+ 6aa:	0e 94 8d 02 	call	0x51a	; 0x51a <_Z15CheckPressedKeyPFvvES0_>
+ 6ae:	f7 01       	movw	r30, r14
+ 6b0:	80 a1       	ldd	r24, Z+32	; 0x20
+ 6b2:	91 a1       	ldd	r25, Z+33	; 0x21
+ 6b4:	96 95       	lsr	r25
+ 6b6:	87 95       	ror	r24
+ 6b8:	96 95       	lsr	r25
+ 6ba:	87 95       	ror	r24
+		
+		if(Enkoder::GetValue()!=lastVal)	//sprawdza stan enkodera
+ 6bc:	18 17       	cp	r17, r24
+ 6be:	09 f4       	brne	.+2      	; 0x6c2 <main+0x134>
+ 6c0:	03 c2       	rjmp	.+1030   	; 0xac8 <main+0x53a>
+ 6c2:	40 a1       	ldd	r20, Z+32	; 0x20
+ 6c4:	51 a1       	ldd	r21, Z+33	; 0x21
+ 6c6:	56 95       	lsr	r21
+ 6c8:	47 95       	ror	r20
+ 6ca:	56 95       	lsr	r21
+ 6cc:	47 95       	ror	r20
+ 6ce:	14 2f       	mov	r17, r20
+		{
+			lastVal = Enkoder::GetValue();
+			switch(state)
+ 6d0:	80 91 05 20 	lds	r24, 0x2005
+ 6d4:	83 30       	cpi	r24, 0x03	; 3
+ 6d6:	09 f4       	brne	.+2      	; 0x6da <main+0x14c>
+ 6d8:	b2 c0       	rjmp	.+356    	; 0x83e <main+0x2b0>
+ 6da:	84 30       	cpi	r24, 0x04	; 4
+ 6dc:	09 f4       	brne	.+2      	; 0x6e0 <main+0x152>
+ 6de:	4f c1       	rjmp	.+670    	; 0x97e <main+0x3f0>
+ 6e0:	82 30       	cpi	r24, 0x02	; 2
+ 6e2:	09 f0       	breq	.+2      	; 0x6e6 <main+0x158>
+ 6e4:	f2 c1       	rjmp	.+996    	; 0xaca <main+0x53c>
+			{
+				case STATE_SET_H:
+					led.SetHsv(Hsv(lastVal,led.currentHsv.s,led.currentHsv.v));
+ 6e6:	ea 81       	ldd	r30, Y+2	; 0x02
+ 6e8:	89 80       	ldd	r8, Y+1	; 0x01
+		return Rgb(tc->CCA, tc->CCB, tc->CCC);
+	}
+	
+	inline void SetHsv(const Hsv& hsv)
+	{
+		currentHsv = hsv;
+ 6ea:	48 83       	st	Y, r20
+		
+		Rgb rgb;
+		unsigned char region, p, q, t;
+		unsigned int h, s, v, remainder;
+
+		if (hsv.s == 0)
+ 6ec:	81 10       	cpse	r8, r1
+ 6ee:	16 c0       	rjmp	.+44     	; 0x71c <main+0x18e>
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 6f0:	af 81       	ldd	r26, Y+7	; 0x07
+ 6f2:	b8 85       	ldd	r27, Y+8	; 0x08
+ 6f4:	10 97       	sbiw	r26, 0x00	; 0
+ 6f6:	71 f0       	breq	.+28     	; 0x714 <main+0x186>
+		tc->CCABUF=rgb.r;
+ 6f8:	8e 2f       	mov	r24, r30
+ 6fa:	90 e0       	ldi	r25, 0x00	; 0
+ 6fc:	d8 96       	adiw	r26, 0x38	; 56
+ 6fe:	8d 93       	st	X+, r24
+ 700:	9c 93       	st	X, r25
+ 702:	d9 97       	sbiw	r26, 0x39	; 57
+		tc->CCBBUF=rgb.g;
+ 704:	da 96       	adiw	r26, 0x3a	; 58
+ 706:	8d 93       	st	X+, r24
+ 708:	9c 93       	st	X, r25
+ 70a:	db 97       	sbiw	r26, 0x3b	; 59
+		tc->CCCBUF=rgb.b;
+ 70c:	dc 96       	adiw	r26, 0x3c	; 60
+ 70e:	8d 93       	st	X+, r24
+ 710:	9c 93       	st	X, r25
+ 712:	dd 97       	sbiw	r26, 0x3d	; 61
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 714:	eb 83       	std	Y+3, r30	; 0x03
+ 716:	ec 83       	std	Y+4, r30	; 0x04
+ 718:	ed 83       	std	Y+5, r30	; 0x05
+ 71a:	d7 c1       	rjmp	.+942    	; 0xaca <main+0x53c>
+			SetRgb(rgb);
+			return;
+		}
+
+		// converting to 16 bit to prevent overflow
+		h = hsv.h;
+ 71c:	55 27       	eor	r21, r21
+		s = hsv.s;
+ 71e:	91 2c       	mov	r9, r1
+		v = hsv.v;
+ 720:	2e 2e       	mov	r2, r30
+ 722:	31 2c       	mov	r3, r1
+
+		region = h / 43;
+ 724:	9a 01       	movw	r18, r20
+ 726:	a3 e8       	ldi	r26, 0x83	; 131
+ 728:	be eb       	ldi	r27, 0xBE	; 190
+ 72a:	0e 94 ee 05 	call	0xbdc	; 0xbdc <__umulhisi3>
+ 72e:	96 95       	lsr	r25
+ 730:	87 95       	ror	r24
+ 732:	92 95       	swap	r25
+ 734:	82 95       	swap	r24
+ 736:	8f 70       	andi	r24, 0x0F	; 15
+ 738:	89 27       	eor	r24, r25
+ 73a:	9f 70       	andi	r25, 0x0F	; 15
+ 73c:	89 27       	eor	r24, r25
+		remainder = (h - (region * 43)) * 6;
+ 73e:	bc 01       	movw	r22, r24
+ 740:	06 03       	mulsu	r16, r22
+ 742:	90 01       	movw	r18, r0
+ 744:	07 9f       	mul	r16, r23
+ 746:	30 0d       	add	r19, r0
+ 748:	11 24       	eor	r1, r1
+ 74a:	42 0f       	add	r20, r18
+ 74c:	53 1f       	adc	r21, r19
+ 74e:	9a 01       	movw	r18, r20
+ 750:	22 0f       	add	r18, r18
+ 752:	33 1f       	adc	r19, r19
+ 754:	42 0f       	add	r20, r18
+ 756:	53 1f       	adc	r21, r19
+ 758:	44 0f       	add	r20, r20
+ 75a:	55 1f       	adc	r21, r21
+
+		p = (v * (255 - s)) >> 8;
+ 75c:	b6 01       	movw	r22, r12
+ 75e:	68 19       	sub	r22, r8
+ 760:	79 09       	sbc	r23, r9
+ 762:	91 01       	movw	r18, r2
+ 764:	62 9f       	mul	r22, r18
+ 766:	d0 01       	movw	r26, r0
+ 768:	63 9f       	mul	r22, r19
+ 76a:	b0 0d       	add	r27, r0
+ 76c:	72 9f       	mul	r23, r18
+ 76e:	b0 0d       	add	r27, r0
+ 770:	11 24       	eor	r1, r1
+ 772:	fb 2f       	mov	r31, r27
+		q = (v * (255 - ((s * remainder) >> 8))) >> 8;
+ 774:	48 9d       	mul	r20, r8
+ 776:	b0 01       	movw	r22, r0
+ 778:	49 9d       	mul	r20, r9
+ 77a:	70 0d       	add	r23, r0
+ 77c:	58 9d       	mul	r21, r8
+ 77e:	70 0d       	add	r23, r0
+ 780:	11 24       	eor	r1, r1
+ 782:	67 2f       	mov	r22, r23
+ 784:	77 27       	eor	r23, r23
+ 786:	16 01       	movw	r2, r12
+ 788:	26 1a       	sub	r2, r22
+ 78a:	37 0a       	sbc	r3, r23
+ 78c:	b1 01       	movw	r22, r2
+ 78e:	62 9f       	mul	r22, r18
+ 790:	10 01       	movw	r2, r0
+ 792:	63 9f       	mul	r22, r19
+ 794:	30 0c       	add	r3, r0
+ 796:	72 9f       	mul	r23, r18
+ 798:	30 0c       	add	r3, r0
+ 79a:	11 24       	eor	r1, r1
+		t = (v * (255 - ((s * (255 - remainder)) >> 8))) >> 8;
+ 79c:	b6 01       	movw	r22, r12
+ 79e:	64 1b       	sub	r22, r20
+ 7a0:	75 0b       	sbc	r23, r21
+ 7a2:	68 9d       	mul	r22, r8
+ 7a4:	a0 01       	movw	r20, r0
+ 7a6:	69 9d       	mul	r22, r9
+ 7a8:	50 0d       	add	r21, r0
+ 7aa:	78 9d       	mul	r23, r8
+ 7ac:	50 0d       	add	r21, r0
+ 7ae:	11 24       	eor	r1, r1
+ 7b0:	45 2f       	mov	r20, r21
+ 7b2:	55 27       	eor	r21, r21
+ 7b4:	26 01       	movw	r4, r12
+ 7b6:	44 1a       	sub	r4, r20
+ 7b8:	55 0a       	sbc	r5, r21
+ 7ba:	42 9e       	mul	r4, r18
+ 7bc:	b0 01       	movw	r22, r0
+ 7be:	43 9e       	mul	r4, r19
+ 7c0:	70 0d       	add	r23, r0
+ 7c2:	52 9e       	mul	r5, r18
+ 7c4:	70 0d       	add	r23, r0
+ 7c6:	11 24       	eor	r1, r1
+ 7c8:	27 2f       	mov	r18, r23
+
+		switch (region)
+ 7ca:	82 30       	cpi	r24, 0x02	; 2
+ 7cc:	91 05       	cpc	r25, r1
+ 7ce:	79 f0       	breq	.+30     	; 0x7ee <main+0x260>
+ 7d0:	2c f4       	brge	.+10     	; 0x7dc <main+0x24e>
+ 7d2:	00 97       	sbiw	r24, 0x00	; 0
+ 7d4:	d1 f0       	breq	.+52     	; 0x80a <main+0x27c>
+ 7d6:	01 97       	sbiw	r24, 0x01	; 1
+ 7d8:	39 f0       	breq	.+14     	; 0x7e8 <main+0x25a>
+ 7da:	15 c0       	rjmp	.+42     	; 0x806 <main+0x278>
+ 7dc:	83 30       	cpi	r24, 0x03	; 3
+ 7de:	91 05       	cpc	r25, r1
+ 7e0:	51 f0       	breq	.+20     	; 0x7f6 <main+0x268>
+ 7e2:	04 97       	sbiw	r24, 0x04	; 4
+ 7e4:	61 f0       	breq	.+24     	; 0x7fe <main+0x270>
+ 7e6:	0f c0       	rjmp	.+30     	; 0x806 <main+0x278>
+			rgb.g = t;
+			rgb.b = p;
+			break;
+			case 1:
+			rgb.r = q;
+			rgb.g = v;
+ 7e8:	2e 2f       	mov	r18, r30
+			rgb.r = v;
+			rgb.g = t;
+			rgb.b = p;
+			break;
+			case 1:
+			rgb.r = q;
+ 7ea:	e3 2d       	mov	r30, r3
+ 7ec:	0e c0       	rjmp	.+28     	; 0x80a <main+0x27c>
+ 7ee:	2e 2f       	mov	r18, r30
+			rgb.g = v;
+			rgb.b = p;
+			break;
+			case 2:
+			rgb.r = p;
+ 7f0:	eb 2f       	mov	r30, r27
+			rgb.g = v;
+			rgb.b = t;
+ 7f2:	f7 2f       	mov	r31, r23
+ 7f4:	0a c0       	rjmp	.+20     	; 0x80a <main+0x27c>
+			break;
+			case 3:
+			rgb.r = p;
+			rgb.g = q;
+ 7f6:	23 2d       	mov	r18, r3
+ 7f8:	fe 2f       	mov	r31, r30
+			rgb.r = p;
+			rgb.g = v;
+			rgb.b = t;
+			break;
+			case 3:
+			rgb.r = p;
+ 7fa:	eb 2f       	mov	r30, r27
+ 7fc:	06 c0       	rjmp	.+12     	; 0x80a <main+0x27c>
+ 7fe:	fe 2f       	mov	r31, r30
+			rgb.g = q;
+			rgb.b = v;
+			break;
+			case 4:
+			rgb.r = t;
+ 800:	e7 2f       	mov	r30, r23
+			rgb.g = p;
+ 802:	2b 2f       	mov	r18, r27
+ 804:	02 c0       	rjmp	.+4      	; 0x80a <main+0x27c>
+			rgb.b = v;
+			break;
+			default:
+			rgb.r = v;
+			rgb.g = p;
+ 806:	2b 2f       	mov	r18, r27
+			rgb.b = q;
+ 808:	f3 2d       	mov	r31, r3
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 80a:	af 81       	ldd	r26, Y+7	; 0x07
+ 80c:	b8 85       	ldd	r27, Y+8	; 0x08
+ 80e:	10 97       	sbiw	r26, 0x00	; 0
+ 810:	91 f0       	breq	.+36     	; 0x836 <main+0x2a8>
+		tc->CCABUF=rgb.r;
+ 812:	8e 2f       	mov	r24, r30
+ 814:	90 e0       	ldi	r25, 0x00	; 0
+ 816:	d8 96       	adiw	r26, 0x38	; 56
+ 818:	8d 93       	st	X+, r24
+ 81a:	9c 93       	st	X, r25
+ 81c:	d9 97       	sbiw	r26, 0x39	; 57
+		tc->CCBBUF=rgb.g;
+ 81e:	82 2f       	mov	r24, r18
+ 820:	90 e0       	ldi	r25, 0x00	; 0
+ 822:	da 96       	adiw	r26, 0x3a	; 58
+ 824:	8d 93       	st	X+, r24
+ 826:	9c 93       	st	X, r25
+ 828:	db 97       	sbiw	r26, 0x3b	; 59
+		tc->CCCBUF=rgb.b;
+ 82a:	8f 2f       	mov	r24, r31
+ 82c:	90 e0       	ldi	r25, 0x00	; 0
+ 82e:	dc 96       	adiw	r26, 0x3c	; 60
+ 830:	8d 93       	st	X+, r24
+ 832:	9c 93       	st	X, r25
+ 834:	dd 97       	sbiw	r26, 0x3d	; 61
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 836:	eb 83       	std	Y+3, r30	; 0x03
+ 838:	2c 83       	std	Y+4, r18	; 0x04
+ 83a:	fd 83       	std	Y+5, r31	; 0x05
+					break;
+ 83c:	46 c1       	rjmp	.+652    	; 0xaca <main+0x53c>
+				case STATE_SET_S:
+					led.SetHsv(Hsv(led.currentHsv.h,lastVal,led.currentHsv.v));
+ 83e:	9a 80       	ldd	r9, Y+2	; 0x02
+ 840:	e8 81       	ld	r30, Y
+		return Rgb(tc->CCA, tc->CCB, tc->CCC);
+	}
+	
+	inline void SetHsv(const Hsv& hsv)
+	{
+		currentHsv = hsv;
+ 842:	49 83       	std	Y+1, r20	; 0x01
+		
+		Rgb rgb;
+		unsigned char region, p, q, t;
+		unsigned int h, s, v, remainder;
+
+		if (hsv.s == 0)
+ 844:	41 11       	cpse	r20, r1
+ 846:	10 c0       	rjmp	.+32     	; 0x868 <main+0x2da>
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 848:	ef 81       	ldd	r30, Y+7	; 0x07
+ 84a:	f8 85       	ldd	r31, Y+8	; 0x08
+ 84c:	30 97       	sbiw	r30, 0x00	; 0
+ 84e:	41 f0       	breq	.+16     	; 0x860 <main+0x2d2>
+		tc->CCABUF=rgb.r;
+ 850:	89 2d       	mov	r24, r9
+ 852:	90 e0       	ldi	r25, 0x00	; 0
+ 854:	80 af       	std	Z+56, r24	; 0x38
+ 856:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=rgb.g;
+ 858:	82 af       	std	Z+58, r24	; 0x3a
+ 85a:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=rgb.b;
+ 85c:	84 af       	std	Z+60, r24	; 0x3c
+ 85e:	95 af       	std	Z+61, r25	; 0x3d
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 860:	9b 82       	std	Y+3, r9	; 0x03
+ 862:	9c 82       	std	Y+4, r9	; 0x04
+ 864:	9d 82       	std	Y+5, r9	; 0x05
+ 866:	31 c1       	rjmp	.+610    	; 0xaca <main+0x53c>
+			SetRgb(rgb);
+			return;
+		}
+
+		// converting to 16 bit to prevent overflow
+		h = hsv.h;
+ 868:	f0 e0       	ldi	r31, 0x00	; 0
+		s = hsv.s;
+ 86a:	55 27       	eor	r21, r21
+		v = hsv.v;
+ 86c:	29 2c       	mov	r2, r9
+ 86e:	31 2c       	mov	r3, r1
+
+		region = h / 43;
+ 870:	9f 01       	movw	r18, r30
+ 872:	a3 e8       	ldi	r26, 0x83	; 131
+ 874:	be eb       	ldi	r27, 0xBE	; 190
+ 876:	0e 94 ee 05 	call	0xbdc	; 0xbdc <__umulhisi3>
+ 87a:	96 95       	lsr	r25
+ 87c:	87 95       	ror	r24
+ 87e:	92 95       	swap	r25
+ 880:	82 95       	swap	r24
+ 882:	8f 70       	andi	r24, 0x0F	; 15
+ 884:	89 27       	eor	r24, r25
+ 886:	9f 70       	andi	r25, 0x0F	; 15
+ 888:	89 27       	eor	r24, r25
+		remainder = (h - (region * 43)) * 6;
+ 88a:	bc 01       	movw	r22, r24
+ 88c:	06 03       	mulsu	r16, r22
+ 88e:	90 01       	movw	r18, r0
+ 890:	07 9f       	mul	r16, r23
+ 892:	30 0d       	add	r19, r0
+ 894:	11 24       	eor	r1, r1
+ 896:	e2 0f       	add	r30, r18
+ 898:	f3 1f       	adc	r31, r19
+ 89a:	9f 01       	movw	r18, r30
+ 89c:	22 0f       	add	r18, r18
+ 89e:	33 1f       	adc	r19, r19
+ 8a0:	e2 0f       	add	r30, r18
+ 8a2:	f3 1f       	adc	r31, r19
+ 8a4:	ee 0f       	add	r30, r30
+ 8a6:	ff 1f       	adc	r31, r31
+
+		p = (v * (255 - s)) >> 8;
+ 8a8:	b6 01       	movw	r22, r12
+ 8aa:	64 1b       	sub	r22, r20
+ 8ac:	75 0b       	sbc	r23, r21
+ 8ae:	91 01       	movw	r18, r2
+ 8b0:	62 9f       	mul	r22, r18
+ 8b2:	d0 01       	movw	r26, r0
+ 8b4:	63 9f       	mul	r22, r19
+ 8b6:	b0 0d       	add	r27, r0
+ 8b8:	72 9f       	mul	r23, r18
+ 8ba:	b0 0d       	add	r27, r0
+ 8bc:	11 24       	eor	r1, r1
+ 8be:	8b 2e       	mov	r8, r27
+		q = (v * (255 - ((s * remainder) >> 8))) >> 8;
+ 8c0:	e4 9f       	mul	r30, r20
+ 8c2:	b0 01       	movw	r22, r0
+ 8c4:	e5 9f       	mul	r30, r21
+ 8c6:	70 0d       	add	r23, r0
+ 8c8:	f4 9f       	mul	r31, r20
+ 8ca:	70 0d       	add	r23, r0
+ 8cc:	11 24       	eor	r1, r1
+ 8ce:	67 2f       	mov	r22, r23
+ 8d0:	77 27       	eor	r23, r23
+ 8d2:	16 01       	movw	r2, r12
+ 8d4:	26 1a       	sub	r2, r22
+ 8d6:	37 0a       	sbc	r3, r23
+ 8d8:	b1 01       	movw	r22, r2
+ 8da:	62 9f       	mul	r22, r18
+ 8dc:	10 01       	movw	r2, r0
+ 8de:	63 9f       	mul	r22, r19
+ 8e0:	30 0c       	add	r3, r0
+ 8e2:	72 9f       	mul	r23, r18
+ 8e4:	30 0c       	add	r3, r0
+ 8e6:	11 24       	eor	r1, r1
+		t = (v * (255 - ((s * (255 - remainder)) >> 8))) >> 8;
+ 8e8:	26 01       	movw	r4, r12
+ 8ea:	4e 1a       	sub	r4, r30
+ 8ec:	5f 0a       	sbc	r5, r31
+ 8ee:	44 9e       	mul	r4, r20
+ 8f0:	b0 01       	movw	r22, r0
+ 8f2:	45 9e       	mul	r4, r21
+ 8f4:	70 0d       	add	r23, r0
+ 8f6:	54 9e       	mul	r5, r20
+ 8f8:	70 0d       	add	r23, r0
+ 8fa:	11 24       	eor	r1, r1
+ 8fc:	67 2f       	mov	r22, r23
+ 8fe:	77 27       	eor	r23, r23
+ 900:	a6 01       	movw	r20, r12
+ 902:	46 1b       	sub	r20, r22
+ 904:	57 0b       	sbc	r21, r23
+ 906:	42 9f       	mul	r20, r18
+ 908:	b0 01       	movw	r22, r0
+ 90a:	43 9f       	mul	r20, r19
+ 90c:	70 0d       	add	r23, r0
+ 90e:	52 9f       	mul	r21, r18
+ 910:	70 0d       	add	r23, r0
+ 912:	11 24       	eor	r1, r1
+ 914:	27 2f       	mov	r18, r23
+
+		switch (region)
+ 916:	82 30       	cpi	r24, 0x02	; 2
+ 918:	91 05       	cpc	r25, r1
+ 91a:	79 f0       	breq	.+30     	; 0x93a <main+0x3ac>
+ 91c:	2c f4       	brge	.+10     	; 0x928 <main+0x39a>
+ 91e:	00 97       	sbiw	r24, 0x00	; 0
+ 920:	d1 f0       	breq	.+52     	; 0x956 <main+0x3c8>
+ 922:	01 97       	sbiw	r24, 0x01	; 1
+ 924:	39 f0       	breq	.+14     	; 0x934 <main+0x3a6>
+ 926:	15 c0       	rjmp	.+42     	; 0x952 <main+0x3c4>
+ 928:	83 30       	cpi	r24, 0x03	; 3
+ 92a:	91 05       	cpc	r25, r1
+ 92c:	51 f0       	breq	.+20     	; 0x942 <main+0x3b4>
+ 92e:	04 97       	sbiw	r24, 0x04	; 4
+ 930:	61 f0       	breq	.+24     	; 0x94a <main+0x3bc>
+ 932:	0f c0       	rjmp	.+30     	; 0x952 <main+0x3c4>
+			rgb.g = t;
+			rgb.b = p;
+			break;
+			case 1:
+			rgb.r = q;
+			rgb.g = v;
+ 934:	29 2d       	mov	r18, r9
+			rgb.r = v;
+			rgb.g = t;
+			rgb.b = p;
+			break;
+			case 1:
+			rgb.r = q;
+ 936:	93 2c       	mov	r9, r3
+ 938:	0e c0       	rjmp	.+28     	; 0x956 <main+0x3c8>
+ 93a:	29 2d       	mov	r18, r9
+			rgb.g = v;
+			rgb.b = p;
+			break;
+			case 2:
+			rgb.r = p;
+ 93c:	9b 2e       	mov	r9, r27
+			rgb.g = v;
+			rgb.b = t;
+ 93e:	87 2e       	mov	r8, r23
+ 940:	0a c0       	rjmp	.+20     	; 0x956 <main+0x3c8>
+			break;
+			case 3:
+			rgb.r = p;
+			rgb.g = q;
+ 942:	23 2d       	mov	r18, r3
+ 944:	89 2c       	mov	r8, r9
+			rgb.r = p;
+			rgb.g = v;
+			rgb.b = t;
+			break;
+			case 3:
+			rgb.r = p;
+ 946:	9b 2e       	mov	r9, r27
+ 948:	06 c0       	rjmp	.+12     	; 0x956 <main+0x3c8>
+ 94a:	89 2c       	mov	r8, r9
+			rgb.g = q;
+			rgb.b = v;
+			break;
+			case 4:
+			rgb.r = t;
+ 94c:	97 2e       	mov	r9, r23
+			rgb.g = p;
+ 94e:	2b 2f       	mov	r18, r27
+ 950:	02 c0       	rjmp	.+4      	; 0x956 <main+0x3c8>
+			rgb.b = v;
+			break;
+			default:
+			rgb.r = v;
+			rgb.g = p;
+ 952:	2b 2f       	mov	r18, r27
+			rgb.b = q;
+ 954:	83 2c       	mov	r8, r3
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 956:	ef 81       	ldd	r30, Y+7	; 0x07
+ 958:	f8 85       	ldd	r31, Y+8	; 0x08
+ 95a:	30 97       	sbiw	r30, 0x00	; 0
+ 95c:	61 f0       	breq	.+24     	; 0x976 <main+0x3e8>
+		tc->CCABUF=rgb.r;
+ 95e:	89 2d       	mov	r24, r9
+ 960:	90 e0       	ldi	r25, 0x00	; 0
+ 962:	80 af       	std	Z+56, r24	; 0x38
+ 964:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=rgb.g;
+ 966:	82 2f       	mov	r24, r18
+ 968:	90 e0       	ldi	r25, 0x00	; 0
+ 96a:	82 af       	std	Z+58, r24	; 0x3a
+ 96c:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=rgb.b;
+ 96e:	88 2d       	mov	r24, r8
+ 970:	90 e0       	ldi	r25, 0x00	; 0
+ 972:	84 af       	std	Z+60, r24	; 0x3c
+ 974:	95 af       	std	Z+61, r25	; 0x3d
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 976:	9b 82       	std	Y+3, r9	; 0x03
+ 978:	2c 83       	std	Y+4, r18	; 0x04
+ 97a:	8d 82       	std	Y+5, r8	; 0x05
+					break;
+ 97c:	a6 c0       	rjmp	.+332    	; 0xaca <main+0x53c>
+				case STATE_SET_V:
+					led.SetHsv(Hsv(led.currentHsv.h,led.currentHsv.s,lastVal));
+ 97e:	e9 81       	ldd	r30, Y+1	; 0x01
+ 980:	88 80       	ld	r8, Y
+		return Rgb(tc->CCA, tc->CCB, tc->CCC);
+	}
+	
+	inline void SetHsv(const Hsv& hsv)
+	{
+		currentHsv = hsv;
+ 982:	4a 83       	std	Y+2, r20	; 0x02
+		
+		Rgb rgb;
+		unsigned char region, p, q, t;
+		unsigned int h, s, v, remainder;
+
+		if (hsv.s == 0)
+ 984:	e1 11       	cpse	r30, r1
+ 986:	10 c0       	rjmp	.+32     	; 0x9a8 <main+0x41a>
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ 988:	ef 81       	ldd	r30, Y+7	; 0x07
+ 98a:	f8 85       	ldd	r31, Y+8	; 0x08
+ 98c:	30 97       	sbiw	r30, 0x00	; 0
+ 98e:	41 f0       	breq	.+16     	; 0x9a0 <main+0x412>
+		tc->CCABUF=rgb.r;
+ 990:	ca 01       	movw	r24, r20
+ 992:	99 27       	eor	r25, r25
+ 994:	80 af       	std	Z+56, r24	; 0x38
+ 996:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=rgb.g;
+ 998:	82 af       	std	Z+58, r24	; 0x3a
+ 99a:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=rgb.b;
+ 99c:	84 af       	std	Z+60, r24	; 0x3c
+ 99e:	95 af       	std	Z+61, r25	; 0x3d
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ 9a0:	4b 83       	std	Y+3, r20	; 0x03
+ 9a2:	4c 83       	std	Y+4, r20	; 0x04
+ 9a4:	4d 83       	std	Y+5, r20	; 0x05
+ 9a6:	91 c0       	rjmp	.+290    	; 0xaca <main+0x53c>
+			SetRgb(rgb);
+			return;
+		}
+
+		// converting to 16 bit to prevent overflow
+		h = hsv.h;
+ 9a8:	91 2c       	mov	r9, r1
+		s = hsv.s;
+ 9aa:	f0 e0       	ldi	r31, 0x00	; 0
+		v = hsv.v;
+
+		region = h / 43;
+ 9ac:	94 01       	movw	r18, r8
+ 9ae:	a3 e8       	ldi	r26, 0x83	; 131
+ 9b0:	be eb       	ldi	r27, 0xBE	; 190
+ 9b2:	0e 94 ee 05 	call	0xbdc	; 0xbdc <__umulhisi3>
+ 9b6:	96 95       	lsr	r25
+ 9b8:	87 95       	ror	r24
+ 9ba:	92 95       	swap	r25
+ 9bc:	82 95       	swap	r24
+ 9be:	8f 70       	andi	r24, 0x0F	; 15
+ 9c0:	89 27       	eor	r24, r25
+ 9c2:	9f 70       	andi	r25, 0x0F	; 15
+ 9c4:	89 27       	eor	r24, r25
+		remainder = (h - (region * 43)) * 6;
+ 9c6:	9c 01       	movw	r18, r24
+ 9c8:	02 03       	mulsu	r16, r18
+ 9ca:	d0 01       	movw	r26, r0
+ 9cc:	03 9f       	mul	r16, r19
+ 9ce:	b0 0d       	add	r27, r0
+ 9d0:	11 24       	eor	r1, r1
+ 9d2:	8a 0e       	add	r8, r26
+ 9d4:	9b 1e       	adc	r9, r27
+ 9d6:	d4 01       	movw	r26, r8
+ 9d8:	aa 0f       	add	r26, r26
+ 9da:	bb 1f       	adc	r27, r27
+ 9dc:	8a 0e       	add	r8, r26
+ 9de:	9b 1e       	adc	r9, r27
+ 9e0:	d4 01       	movw	r26, r8
+ 9e2:	aa 0f       	add	r26, r26
+ 9e4:	bb 1f       	adc	r27, r27
+
+		p = (v * (255 - s)) >> 8;
+ 9e6:	b6 01       	movw	r22, r12
+ 9e8:	6e 1b       	sub	r22, r30
+ 9ea:	7f 0b       	sbc	r23, r31
+ 9ec:	9a 01       	movw	r18, r20
+ 9ee:	33 27       	eor	r19, r19
+ 9f0:	62 9f       	mul	r22, r18
+ 9f2:	40 01       	movw	r8, r0
+ 9f4:	63 9f       	mul	r22, r19
+ 9f6:	90 0c       	add	r9, r0
+ 9f8:	72 9f       	mul	r23, r18
+ 9fa:	90 0c       	add	r9, r0
+ 9fc:	11 24       	eor	r1, r1
+ 9fe:	59 2c       	mov	r5, r9
+		q = (v * (255 - ((s * remainder) >> 8))) >> 8;
+ a00:	ae 9f       	mul	r26, r30
+ a02:	b0 01       	movw	r22, r0
+ a04:	af 9f       	mul	r26, r31
+ a06:	70 0d       	add	r23, r0
+ a08:	be 9f       	mul	r27, r30
+ a0a:	70 0d       	add	r23, r0
+ a0c:	11 24       	eor	r1, r1
+ a0e:	67 2f       	mov	r22, r23
+ a10:	77 27       	eor	r23, r23
+ a12:	16 01       	movw	r2, r12
+ a14:	26 1a       	sub	r2, r22
+ a16:	37 0a       	sbc	r3, r23
+ a18:	b1 01       	movw	r22, r2
+ a1a:	62 9f       	mul	r22, r18
+ a1c:	10 01       	movw	r2, r0
+ a1e:	63 9f       	mul	r22, r19
+ a20:	30 0c       	add	r3, r0
+ a22:	72 9f       	mul	r23, r18
+ a24:	30 0c       	add	r3, r0
+ a26:	11 24       	eor	r1, r1
+ a28:	63 2c       	mov	r6, r3
+		t = (v * (255 - ((s * (255 - remainder)) >> 8))) >> 8;
+ a2a:	b6 01       	movw	r22, r12
+ a2c:	6a 1b       	sub	r22, r26
+ a2e:	7b 0b       	sbc	r23, r27
+ a30:	db 01       	movw	r26, r22
+ a32:	ae 9f       	mul	r26, r30
+ a34:	b0 01       	movw	r22, r0
+ a36:	af 9f       	mul	r26, r31
+ a38:	70 0d       	add	r23, r0
+ a3a:	be 9f       	mul	r27, r30
+ a3c:	70 0d       	add	r23, r0
+ a3e:	11 24       	eor	r1, r1
+ a40:	67 2f       	mov	r22, r23
+ a42:	77 27       	eor	r23, r23
+ a44:	f6 01       	movw	r30, r12
+ a46:	e6 1b       	sub	r30, r22
+ a48:	f7 0b       	sbc	r31, r23
+ a4a:	bf 01       	movw	r22, r30
+ a4c:	62 9f       	mul	r22, r18
+ a4e:	f0 01       	movw	r30, r0
+ a50:	63 9f       	mul	r22, r19
+ a52:	f0 0d       	add	r31, r0
+ a54:	72 9f       	mul	r23, r18
+ a56:	f0 0d       	add	r31, r0
+ a58:	11 24       	eor	r1, r1
+ a5a:	2f 2f       	mov	r18, r31
+
+		switch (region)
+ a5c:	82 30       	cpi	r24, 0x02	; 2
+ a5e:	91 05       	cpc	r25, r1
+ a60:	71 f0       	breq	.+28     	; 0xa7e <main+0x4f0>
+ a62:	2c f4       	brge	.+10     	; 0xa6e <main+0x4e0>
+ a64:	00 97       	sbiw	r24, 0x00	; 0
+ a66:	d9 f0       	breq	.+54     	; 0xa9e <main+0x510>
+ a68:	01 97       	sbiw	r24, 0x01	; 1
+ a6a:	39 f0       	breq	.+14     	; 0xa7a <main+0x4ec>
+ a6c:	14 c0       	rjmp	.+40     	; 0xa96 <main+0x508>
+ a6e:	83 30       	cpi	r24, 0x03	; 3
+ a70:	91 05       	cpc	r25, r1
+ a72:	49 f0       	breq	.+18     	; 0xa86 <main+0x4f8>
+ a74:	04 97       	sbiw	r24, 0x04	; 4
+ a76:	59 f0       	breq	.+22     	; 0xa8e <main+0x500>
+ a78:	0e c0       	rjmp	.+28     	; 0xa96 <main+0x508>
+			rgb.g = t;
+			rgb.b = p;
+			break;
+			case 1:
+			rgb.r = q;
+			rgb.g = v;
+ a7a:	24 2f       	mov	r18, r20
+ a7c:	11 c0       	rjmp	.+34     	; 0xaa0 <main+0x512>
+			rgb.b = p;
+			break;
+			case 2:
+			rgb.r = p;
+ a7e:	69 2c       	mov	r6, r9
+			rgb.g = v;
+			rgb.b = t;
+ a80:	5f 2e       	mov	r5, r31
+			rgb.g = v;
+			rgb.b = p;
+			break;
+			case 2:
+			rgb.r = p;
+			rgb.g = v;
+ a82:	24 2f       	mov	r18, r20
+ a84:	0d c0       	rjmp	.+26     	; 0xaa0 <main+0x512>
+			rgb.b = t;
+			break;
+			case 3:
+			rgb.r = p;
+			rgb.g = q;
+ a86:	23 2d       	mov	r18, r3
+			rgb.r = p;
+			rgb.g = v;
+			rgb.b = t;
+			break;
+			case 3:
+			rgb.r = p;
+ a88:	69 2c       	mov	r6, r9
+			rgb.g = q;
+			rgb.b = v;
+ a8a:	54 2e       	mov	r5, r20
+ a8c:	09 c0       	rjmp	.+18     	; 0xaa0 <main+0x512>
+			break;
+			case 4:
+			rgb.r = t;
+ a8e:	6f 2e       	mov	r6, r31
+			rgb.g = p;
+ a90:	29 2d       	mov	r18, r9
+			rgb.b = v;
+ a92:	54 2e       	mov	r5, r20
+ a94:	05 c0       	rjmp	.+10     	; 0xaa0 <main+0x512>
+			break;
+			default:
+			rgb.r = v;
+			rgb.g = p;
+ a96:	29 2d       	mov	r18, r9
+			rgb.b = q;
+ a98:	53 2c       	mov	r5, r3
+			rgb.r = t;
+			rgb.g = p;
+			rgb.b = v;
+			break;
+			default:
+			rgb.r = v;
+ a9a:	64 2e       	mov	r6, r20
+ a9c:	01 c0       	rjmp	.+2      	; 0xaa0 <main+0x512>
+		t = (v * (255 - ((s * (255 - remainder)) >> 8))) >> 8;
+
+		switch (region)
+		{
+			case 0:
+			rgb.r = v;
+ a9e:	64 2e       	mov	r6, r20
+		timer.PER=256;
+		timer.CTRLA = TC45_CLKSEL_DIV64_gc;
+	}
+	inline void _set(const Rgb& rgb)
+	{
+		if(!tc)return;
+ aa0:	ef 81       	ldd	r30, Y+7	; 0x07
+ aa2:	f8 85       	ldd	r31, Y+8	; 0x08
+ aa4:	30 97       	sbiw	r30, 0x00	; 0
+ aa6:	61 f0       	breq	.+24     	; 0xac0 <main+0x532>
+		tc->CCABUF=rgb.r;
+ aa8:	86 2d       	mov	r24, r6
+ aaa:	90 e0       	ldi	r25, 0x00	; 0
+ aac:	80 af       	std	Z+56, r24	; 0x38
+ aae:	91 af       	std	Z+57, r25	; 0x39
+		tc->CCBBUF=rgb.g;
+ ab0:	82 2f       	mov	r24, r18
+ ab2:	90 e0       	ldi	r25, 0x00	; 0
+ ab4:	82 af       	std	Z+58, r24	; 0x3a
+ ab6:	93 af       	std	Z+59, r25	; 0x3b
+		tc->CCCBUF=rgb.b;
+ ab8:	85 2d       	mov	r24, r5
+ aba:	90 e0       	ldi	r25, 0x00	; 0
+ abc:	84 af       	std	Z+60, r24	; 0x3c
+ abe:	95 af       	std	Z+61, r25	; 0x3d
+	
+	inline void SetRgb(const Rgb& rgb)
+	{
+		_set(rgb);
+		
+		savedRgb=rgb;
+ ac0:	6b 82       	std	Y+3, r6	; 0x03
+ ac2:	2c 83       	std	Y+4, r18	; 0x04
+ ac4:	5d 82       	std	Y+5, r5	; 0x05
+					break;
+ ac6:	01 c0       	rjmp	.+2      	; 0xaca <main+0x53c>
+ ac8:	18 2f       	mov	r17, r24
+				default:
+					break;
+			}
+		}
+		switch(state)	//sprawdza stan ledów
+ aca:	80 91 05 20 	lds	r24, 0x2005
+ ace:	88 23       	and	r24, r24
+ ad0:	19 f0       	breq	.+6      	; 0xad8 <main+0x54a>
+ ad2:	81 30       	cpi	r24, 0x01	; 1
+ ad4:	39 f0       	breq	.+14     	; 0xae4 <main+0x556>
+ ad6:	0b c0       	rjmp	.+22     	; 0xaee <main+0x560>
+		{
+			case STATE_OFF:
+				if(led.on)led.Off();
+ ad8:	8e 81       	ldd	r24, Y+6	; 0x06
+ ada:	88 23       	and	r24, r24
+ adc:	09 f4       	brne	.+2      	; 0xae0 <main+0x552>
+ ade:	6b c0       	rjmp	.+214    	; 0xbb6 <main+0x628>
+		}
+		SetRgb(rgb);
+	}
+	
+	inline void On() {on=true;}
+	inline void Off() {on=false;}
+ ae0:	1e 82       	std	Y+6, r1	; 0x06
+ ae2:	69 c0       	rjmp	.+210    	; 0xbb6 <main+0x628>
+				break;
+			case STATE_ON:
+				if(!led.on)led.On();
+ ae4:	8e 81       	ldd	r24, Y+6	; 0x06
+ ae6:	81 11       	cpse	r24, r1
+ ae8:	66 c0       	rjmp	.+204    	; 0xbb6 <main+0x628>
+			break;
+		}
+		SetRgb(rgb);
+	}
+	
+	inline void On() {on=true;}
+ aea:	7e 82       	std	Y+6, r7	; 0x06
+ aec:	64 c0       	rjmp	.+200    	; 0xbb6 <main+0x628>
+			default:
+				break;
+		}
+		
+		
+		if(timerFlag)
+ aee:	90 91 1d 20 	lds	r25, 0x201D
+ af2:	99 23       	and	r25, r25
+ af4:	09 f4       	brne	.+2      	; 0xaf8 <main+0x56a>
+ af6:	d5 cd       	rjmp	.-1110   	; 0x6a2 <main+0x114>
+		{
+			timerFlag = false;
+ af8:	10 92 1d 20 	sts	0x201D, r1
+			
+			if(CheckState())
+ afc:	82 30       	cpi	r24, 0x02	; 2
+ afe:	08 f0       	brcs	.+2      	; 0xb02 <main+0x574>
+ b00:	d0 cd       	rjmp	.-1120   	; 0x6a2 <main+0x114>
+inline void UpdateState()
+{
+	
+	//formula = (czujnikState || (stacyjkaState && przyciskState));
+	//bool stacyjka = !(PORTD.IN & STACYJKA);
+	bool czujnikState = []()->bool{return !(PORTD.IN & CZUJNIK);}();
+ b02:	f5 01       	movw	r30, r10
+ b04:	80 85       	ldd	r24, Z+8	; 0x08
+	bool stacyjkaState = []()->bool{return !(PORTD.IN & STACYJKA);}();
+ b06:	90 85       	ldd	r25, Z+8	; 0x08
+	bool stateFormula = (czujnikState || (przyciskState && stacyjkaState));
+ b08:	84 ff       	sbrs	r24, 4
+ b0a:	5a c0       	rjmp	.+180    	; 0xbc0 <main+0x632>
+ b0c:	80 91 04 20 	lds	r24, 0x2004
+ b10:	88 23       	and	r24, r24
+ b12:	09 f4       	brne	.+2      	; 0xb16 <main+0x588>
+ b14:	58 c0       	rjmp	.+176    	; 0xbc6 <main+0x638>
+ b16:	95 ff       	sbrs	r25, 5
+ b18:	53 c0       	rjmp	.+166    	; 0xbc0 <main+0x632>
+ b1a:	55 c0       	rjmp	.+170    	; 0xbc6 <main+0x638>
+	inline void Off() {on=false;}
+	
+	inline void UpdateFades()
+	{
+		if(on)
+ b1c:	8e 81       	ldd	r24, Y+6	; 0x06
+ b1e:	88 23       	and	r24, r24
+ b20:	41 f1       	breq	.+80     	; 0xb72 <main+0x5e4>
+		{
+			if(tc->CCA<savedRgb.r)tc->CCABUF=tc->CCA+1;
+ b22:	ef 81       	ldd	r30, Y+7	; 0x07
+ b24:	f8 85       	ldd	r31, Y+8	; 0x08
+ b26:	20 a5       	ldd	r18, Z+40	; 0x28
+ b28:	31 a5       	ldd	r19, Z+41	; 0x29
+ b2a:	8b 81       	ldd	r24, Y+3	; 0x03
+ b2c:	90 e0       	ldi	r25, 0x00	; 0
+ b2e:	28 17       	cp	r18, r24
+ b30:	39 07       	cpc	r19, r25
+ b32:	28 f4       	brcc	.+10     	; 0xb3e <main+0x5b0>
+ b34:	80 a5       	ldd	r24, Z+40	; 0x28
+ b36:	91 a5       	ldd	r25, Z+41	; 0x29
+ b38:	01 96       	adiw	r24, 0x01	; 1
+ b3a:	80 af       	std	Z+56, r24	; 0x38
+ b3c:	91 af       	std	Z+57, r25	; 0x39
+			if(tc->CCB<savedRgb.g)tc->CCBBUF=tc->CCB+1;
+ b3e:	22 a5       	ldd	r18, Z+42	; 0x2a
+ b40:	33 a5       	ldd	r19, Z+43	; 0x2b
+ b42:	8c 81       	ldd	r24, Y+4	; 0x04
+ b44:	90 e0       	ldi	r25, 0x00	; 0
+ b46:	28 17       	cp	r18, r24
+ b48:	39 07       	cpc	r19, r25
+ b4a:	28 f4       	brcc	.+10     	; 0xb56 <main+0x5c8>
+ b4c:	82 a5       	ldd	r24, Z+42	; 0x2a
+ b4e:	93 a5       	ldd	r25, Z+43	; 0x2b
+ b50:	01 96       	adiw	r24, 0x01	; 1
+ b52:	82 af       	std	Z+58, r24	; 0x3a
+ b54:	93 af       	std	Z+59, r25	; 0x3b
+			if(tc->CCC<savedRgb.b)tc->CCCBUF=tc->CCC+1;
+ b56:	24 a5       	ldd	r18, Z+44	; 0x2c
+ b58:	35 a5       	ldd	r19, Z+45	; 0x2d
+ b5a:	8d 81       	ldd	r24, Y+5	; 0x05
+ b5c:	90 e0       	ldi	r25, 0x00	; 0
+ b5e:	28 17       	cp	r18, r24
+ b60:	39 07       	cpc	r19, r25
+ b62:	08 f0       	brcs	.+2      	; 0xb66 <main+0x5d8>
+ b64:	9e cd       	rjmp	.-1220   	; 0x6a2 <main+0x114>
+ b66:	84 a5       	ldd	r24, Z+44	; 0x2c
+ b68:	95 a5       	ldd	r25, Z+45	; 0x2d
+ b6a:	01 96       	adiw	r24, 0x01	; 1
+ b6c:	84 af       	std	Z+60, r24	; 0x3c
+ b6e:	95 af       	std	Z+61, r25	; 0x3d
+ b70:	98 cd       	rjmp	.-1232   	; 0x6a2 <main+0x114>
+		}
+		else
+		{
+			if(tc->CCA>0)tc->CCABUF=tc->CCA-1;
+ b72:	ef 81       	ldd	r30, Y+7	; 0x07
+ b74:	f8 85       	ldd	r31, Y+8	; 0x08
+ b76:	80 a5       	ldd	r24, Z+40	; 0x28
+ b78:	91 a5       	ldd	r25, Z+41	; 0x29
+ b7a:	89 2b       	or	r24, r25
+ b7c:	29 f0       	breq	.+10     	; 0xb88 <main+0x5fa>
+ b7e:	80 a5       	ldd	r24, Z+40	; 0x28
+ b80:	91 a5       	ldd	r25, Z+41	; 0x29
+ b82:	01 97       	sbiw	r24, 0x01	; 1
+ b84:	80 af       	std	Z+56, r24	; 0x38
+ b86:	91 af       	std	Z+57, r25	; 0x39
+			if(tc->CCB>0)tc->CCBBUF=tc->CCB-1;
+ b88:	82 a5       	ldd	r24, Z+42	; 0x2a
+ b8a:	93 a5       	ldd	r25, Z+43	; 0x2b
+ b8c:	89 2b       	or	r24, r25
+ b8e:	29 f0       	breq	.+10     	; 0xb9a <main+0x60c>
+ b90:	82 a5       	ldd	r24, Z+42	; 0x2a
+ b92:	93 a5       	ldd	r25, Z+43	; 0x2b
+ b94:	01 97       	sbiw	r24, 0x01	; 1
+ b96:	82 af       	std	Z+58, r24	; 0x3a
+ b98:	93 af       	std	Z+59, r25	; 0x3b
+			if(tc->CCC>0)tc->CCCBUF=tc->CCC-1;
+ b9a:	84 a5       	ldd	r24, Z+44	; 0x2c
+ b9c:	95 a5       	ldd	r25, Z+45	; 0x2d
+ b9e:	89 2b       	or	r24, r25
+ ba0:	09 f4       	brne	.+2      	; 0xba4 <main+0x616>
+ ba2:	7f cd       	rjmp	.-1282   	; 0x6a2 <main+0x114>
+ ba4:	84 a5       	ldd	r24, Z+44	; 0x2c
+ ba6:	95 a5       	ldd	r25, Z+45	; 0x2d
+ ba8:	01 97       	sbiw	r24, 0x01	; 1
+ baa:	84 af       	std	Z+60, r24	; 0x3c
+ bac:	95 af       	std	Z+61, r25	; 0x3d
+ bae:	79 cd       	rjmp	.-1294   	; 0x6a2 <main+0x114>
+		}
+		
+		
+		if(timerFlag)
+		{
+			timerFlag = false;
+ bb0:	10 92 1d 20 	sts	0x201D, r1
+ bb4:	a6 cf       	rjmp	.-180    	; 0xb02 <main+0x574>
+			default:
+				break;
+		}
+		
+		
+		if(timerFlag)
+ bb6:	80 91 1d 20 	lds	r24, 0x201D
+ bba:	81 11       	cpse	r24, r1
+ bbc:	f9 cf       	rjmp	.-14     	; 0xbb0 <main+0x622>
+ bbe:	71 cd       	rjmp	.-1310   	; 0x6a2 <main+0x114>
+	//bool stacyjka = !(PORTD.IN & STACYJKA);
+	bool czujnikState = []()->bool{return !(PORTD.IN & CZUJNIK);}();
+	bool stacyjkaState = []()->bool{return !(PORTD.IN & STACYJKA);}();
+	bool stateFormula = (czujnikState || (przyciskState && stacyjkaState));
+	
+	if(stateFormula)state = STATE_ON;
+ bc0:	70 92 05 20 	sts	0x2005, r7
+ bc4:	ab cf       	rjmp	.-170    	; 0xb1c <main+0x58e>
+	else state = STATE_OFF;
+ bc6:	10 92 05 20 	sts	0x2005, r1
+ bca:	a8 cf       	rjmp	.-176    	; 0xb1c <main+0x58e>
+
+00000bcc <_GLOBAL__sub_I__ZN7Enkoder12EncoderTimerE>:
+	STATE_SET_S,
+	STATE_SET_V,
+};
+
+ProgramStates state = STATE_ON;
+RgbController led = RgbController();
+ bcc:	ee e1       	ldi	r30, 0x1E	; 30
+ bce:	f0 e2       	ldi	r31, 0x20	; 32
+ bd0:	89 e0       	ldi	r24, 0x09	; 9
+ bd2:	df 01       	movw	r26, r30
+ bd4:	1d 92       	st	X+, r1
+ bd6:	8a 95       	dec	r24
+ bd8:	e9 f7       	brne	.-6      	; 0xbd4 <_GLOBAL__sub_I__ZN7Enkoder12EncoderTimerE+0x8>
+ bda:	08 95       	ret
+
+00000bdc <__umulhisi3>:
+ bdc:	a2 9f       	mul	r26, r18
+ bde:	b0 01       	movw	r22, r0
+ be0:	b3 9f       	mul	r27, r19
+ be2:	c0 01       	movw	r24, r0
+ be4:	a3 9f       	mul	r26, r19
+ be6:	70 0d       	add	r23, r0
+ be8:	81 1d       	adc	r24, r1
+ bea:	11 24       	eor	r1, r1
+ bec:	91 1d       	adc	r25, r1
+ bee:	b2 9f       	mul	r27, r18
+ bf0:	70 0d       	add	r23, r0
+ bf2:	81 1d       	adc	r24, r1
+ bf4:	11 24       	eor	r1, r1
+ bf6:	91 1d       	adc	r25, r1
+ bf8:	08 95       	ret
+
+00000bfa <__tablejump2__>:
+ bfa:	ee 0f       	add	r30, r30
+ bfc:	ff 1f       	adc	r31, r31
+ bfe:	05 90       	lpm	r0, Z+
+ c00:	f4 91       	lpm	r31, Z
+ c02:	e0 2d       	mov	r30, r0
+ c04:	09 94       	ijmp
+
+00000c06 <eeprom_read_byte>:
+ c06:	03 d0       	rcall	.+6      	; 0xc0e <eeprom_mapen>
+ c08:	80 81       	ld	r24, Z
+ c0a:	99 27       	eor	r25, r25
+ c0c:	08 95       	ret
+
+00000c0e <eeprom_mapen>:
+ c0e:	fc 01       	movw	r30, r24
+ c10:	e0 50       	subi	r30, 0x00	; 0
+ c12:	f0 4f       	sbci	r31, 0xF0	; 240
+ c14:	08 95       	ret
+
+00000c16 <eeprom_write_byte>:
+ c16:	26 2f       	mov	r18, r22
+
+00000c18 <eeprom_write_r18>:
+ c18:	af 93       	push	r26
+ c1a:	bf 93       	push	r27
+ c1c:	e0 ec       	ldi	r30, 0xC0	; 192
+ c1e:	f1 e0       	ldi	r31, 0x01	; 1
+ c20:	37 85       	ldd	r19, Z+15	; 0x0f
+ c22:	37 fd       	sbrc	r19, 7
+ c24:	fd cf       	rjmp	.-6      	; 0xc20 <eeprom_write_r18+0x8>
+ c26:	80 83       	st	Z, r24
+ c28:	91 83       	std	Z+1, r25	; 0x01
+ c2a:	12 82       	std	Z+2, r1	; 0x02
+ c2c:	dc 01       	movw	r26, r24
+ c2e:	a0 50       	subi	r26, 0x00	; 0
+ c30:	b0 4f       	sbci	r27, 0xF0	; 240
+ c32:	2c 93       	st	X, r18
+ c34:	25 e3       	ldi	r18, 0x35	; 53
+ c36:	22 87       	std	Z+10, r18	; 0x0a
+ c38:	28 ed       	ldi	r18, 0xD8	; 216
+ c3a:	31 e0       	ldi	r19, 0x01	; 1
+ c3c:	24 bf       	out	0x34, r18	; 52
+ c3e:	33 87       	std	Z+11, r19	; 0x0b
+ c40:	01 96       	adiw	r24, 0x01	; 1
+ c42:	bf 91       	pop	r27
+ c44:	af 91       	pop	r26
+ c46:	08 95       	ret
+
+00000c48 <_exit>:
+ c48:	f8 94       	cli
+
+00000c4a <__stop_program>:
+ c4a:	ff cf       	rjmp	.-2      	; 0xc4a <__stop_program>
